@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0 20px;
+}
+
+button {
+  background: red;
+  border-radius: 999px;
+  box-shadow: red 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+/* =================================== menu =================================== */
+menu {
+    list-style: none;
+    display: flex;
+    /* background-color: yellow; */
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+menu li img {
+    height: 50px;
+}
+
