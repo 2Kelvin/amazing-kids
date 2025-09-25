@@ -3,6 +3,13 @@ const popUpPage = document.getElementById('popUpPage');
 const fullScreenImage = document.getElementById('fullScreenImage');
 const closeButton = document.getElementById('closeButton');
 const allPicturesContainer = document.getElementById('allPicturesContainer');
+const artAndCraftButton = document.getElementById('artAndCraftButton');
+const danceButton = document.getElementById('danceButton');
+const devotionButton = document.getElementById('devotionButton');
+const dinnerButton = document.getElementById('dinnerButton');
+const holidayButton = document.getElementById('holidayButton');
+const specialButton = document.getElementById('specialButton');
+const allImagesButton = document.getElementById('allButton');
 
 // all art images
 const allArtAndCraftImages = [
@@ -100,7 +107,10 @@ const allImages = [
 // looping through all arrays of images
 for (let i = 0; i < allImages.length; i++) {
     const eachArrayOfImages = allImages[i];
-    
+
+    // activate the all images button
+    allImagesButton.classList.add('activeGalleryBtn');
+
     // looping through each image array
     eachArrayOfImages.forEach(pictureSrc => { // pictureSrc is the src of each image (as added in the array)
         // creating div & img elements to host the incoming images
@@ -139,3 +149,313 @@ for (let i = 0; i < allImages.length; i++) {
         }
     });
 }
+
+// displaying all images when all button is clicked
+allImagesButton.addEventListener('click', () => {
+    allImagesButton.classList.add('activeGalleryBtn');
+    artAndCraftButton.classList.remove('activeGalleryBtn');
+    devotionButton.classList.remove('activeGalleryBtn');
+    danceButton.classList.remove('activeGalleryBtn');
+    specialButton.classList.remove('activeGalleryBtn');
+    dinnerButton.classList.remove('activeGalleryBtn');
+    holidayButton.classList.remove('activeGalleryBtn');
+
+    for (let i = 0; i < allImages.length; i++) {
+        const eachArrayOfImages = allImages[i];
+
+        eachArrayOfImages.forEach(pictureSrc => {
+            const eachPictureDiv = document.createElement('div');
+            const eachImgTag = document.createElement('img');
+
+            eachImgTag.src = pictureSrc;
+            eachImgTag.alt = 'Picture';
+
+            eachPictureDiv.classList.add('eachPictureDiv');
+            eachPictureDiv.appendChild(eachImgTag);
+
+            eachImgTag.addEventListener('click', () => {
+                fullScreenImage.src = pictureSrc;
+                popUpPage.style.display = 'flex';
+                document.body.classList.add('noScroll');
+            });
+
+            allPicturesContainer.appendChild(eachPictureDiv);
+        });
+
+        closeButton.addEventListener('click', () => {
+            popUpPage.style.display = 'none';
+            document.body.classList.remove('noScroll');
+        });
+
+        popUpPage.addEventListener('click', (event) => {
+            if (event.target === popUpPage) {
+                popUpPage.style.display = 'none';
+                document.body.classList.remove('noScroll');
+            }
+        });
+    }
+});
+
+// displaying art and craft images only on Art and Craft button click
+artAndCraftButton.addEventListener('click', () => {
+    artAndCraftButton.classList.add('activeGalleryBtn');
+    devotionButton.classList.remove('activeGalleryBtn');
+    danceButton.classList.remove('activeGalleryBtn');
+    specialButton.classList.remove('activeGalleryBtn');
+    dinnerButton.classList.remove('activeGalleryBtn');
+    holidayButton.classList.remove('activeGalleryBtn');
+    allImagesButton.classList.remove('activeGalleryBtn');
+
+    allPicturesContainer.replaceChildren();
+
+    allArtAndCraftImages.forEach(pictureSrc => {
+        const eachPictureDiv = document.createElement('div');
+        const eachImgTag = document.createElement('img');
+
+        eachImgTag.src = pictureSrc;
+        eachImgTag.alt = 'Picture';
+
+        eachPictureDiv.classList.add('eachPictureDiv');
+        eachPictureDiv.appendChild(eachImgTag);
+
+        eachImgTag.addEventListener('click', () => {
+            fullScreenImage.src = pictureSrc;
+            popUpPage.style.display = 'flex';
+            document.body.classList.add('noScroll');
+        });
+
+        allPicturesContainer.appendChild(eachPictureDiv);
+    });
+
+    closeButton.addEventListener('click', () => {
+        popUpPage.style.display = 'none';
+        document.body.classList.remove('noScroll');
+    });
+
+    popUpPage.addEventListener('click', (event) => {
+        if (event.target === popUpPage) {
+            popUpPage.style.display = 'none';
+            document.body.classList.remove('noScroll');
+        }
+    });
+});
+
+// displaying devotion images only on devotionButton click
+devotionButton.addEventListener('click', () => {
+    devotionButton.classList.add('activeGalleryBtn');
+    artAndCraftButton.classList.remove('activeGalleryBtn');
+    danceButton.classList.remove('activeGalleryBtn');
+    specialButton.classList.remove('activeGalleryBtn');
+    dinnerButton.classList.remove('activeGalleryBtn');
+    holidayButton.classList.remove('activeGalleryBtn');
+    allImagesButton.classList.remove('activeGalleryBtn');
+
+    allPicturesContainer.replaceChildren();
+
+    allDevotionImages.forEach(pictureSrc => {
+        const eachPictureDiv = document.createElement('div');
+        const eachImgTag = document.createElement('img');
+
+        eachImgTag.src = pictureSrc;
+        eachImgTag.alt = 'Picture';
+
+        eachPictureDiv.classList.add('eachPictureDiv');
+        eachPictureDiv.appendChild(eachImgTag);
+
+        eachImgTag.addEventListener('click', () => {
+            fullScreenImage.src = pictureSrc;
+            popUpPage.style.display = 'flex';
+            document.body.classList.add('noScroll');
+        });
+
+        allPicturesContainer.appendChild(eachPictureDiv);
+    });
+
+    closeButton.addEventListener('click', () => {
+        popUpPage.style.display = 'none';
+        document.body.classList.remove('noScroll');
+    });
+
+    popUpPage.addEventListener('click', (event) => {
+        if (event.target === popUpPage) {
+            popUpPage.style.display = 'none';
+            document.body.classList.remove('noScroll');
+        }
+    });
+});
+
+// displaying dance images only on devotionButton click
+danceButton.addEventListener('click', () => {
+    danceButton.classList.add('activeGalleryBtn');
+    artAndCraftButton.classList.remove('activeGalleryBtn');
+    specialButton.classList.remove('activeGalleryBtn');
+    devotionButton.classList.remove('activeGalleryBtn');
+    dinnerButton.classList.remove('activeGalleryBtn');
+    holidayButton.classList.remove('activeGalleryBtn');
+    allImagesButton.classList.remove('activeGalleryBtn');
+
+    allPicturesContainer.replaceChildren();
+
+    allDanceImages.forEach(pictureSrc => {
+        const eachPictureDiv = document.createElement('div');
+        const eachImgTag = document.createElement('img');
+
+        eachImgTag.src = pictureSrc;
+        eachImgTag.alt = 'Picture';
+
+        eachPictureDiv.classList.add('eachPictureDiv');
+        eachPictureDiv.appendChild(eachImgTag);
+
+        eachImgTag.addEventListener('click', () => {
+            fullScreenImage.src = pictureSrc;
+            popUpPage.style.display = 'flex';
+            document.body.classList.add('noScroll');
+        });
+
+        allPicturesContainer.appendChild(eachPictureDiv);
+    });
+
+    closeButton.addEventListener('click', () => {
+        popUpPage.style.display = 'none';
+        document.body.classList.remove('noScroll');
+    });
+
+    popUpPage.addEventListener('click', (event) => {
+        if (event.target === popUpPage) {
+            popUpPage.style.display = 'none';
+            document.body.classList.remove('noScroll');
+        }
+    });
+});
+
+// displaying dinner images only on Dinner button click
+dinnerButton.addEventListener('click', () => {
+    dinnerButton.classList.add('activeGalleryBtn');
+    artAndCraftButton.classList.remove('activeGalleryBtn');
+    danceButton.classList.remove('activeGalleryBtn');
+    devotionButton.classList.remove('activeGalleryBtn');
+    specialButton.classList.remove('activeGalleryBtn');
+    holidayButton.classList.remove('activeGalleryBtn');
+    allImagesButton.classList.remove('activeGalleryBtn');
+
+    allPicturesContainer.replaceChildren();
+
+    allDinnerImages.forEach(pictureSrc => {
+        const eachPictureDiv = document.createElement('div');
+        const eachImgTag = document.createElement('img');
+
+        eachImgTag.src = pictureSrc;
+        eachImgTag.alt = 'Picture';
+
+        eachPictureDiv.classList.add('eachPictureDiv');
+        eachPictureDiv.appendChild(eachImgTag);
+
+        eachImgTag.addEventListener('click', () => {
+            fullScreenImage.src = pictureSrc;
+            popUpPage.style.display = 'flex';
+            document.body.classList.add('noScroll');
+        });
+
+        allPicturesContainer.appendChild(eachPictureDiv);
+    });
+
+    closeButton.addEventListener('click', () => {
+        popUpPage.style.display = 'none';
+        document.body.classList.remove('noScroll');
+    });
+
+    popUpPage.addEventListener('click', (event) => {
+        if (event.target === popUpPage) {
+            popUpPage.style.display = 'none';
+            document.body.classList.remove('noScroll');
+        }
+    });
+});
+
+// displaying holiday program images only on holidayButton click
+holidayButton.addEventListener('click', () => {
+    holidayButton.classList.add('activeGalleryBtn');
+    artAndCraftButton.classList.remove('activeGalleryBtn');
+    danceButton.classList.remove('activeGalleryBtn');
+    devotionButton.classList.remove('activeGalleryBtn');
+    dinnerButton.classList.remove('activeGalleryBtn');
+    specialButton.classList.remove('activeGalleryBtn');
+    allImagesButton.classList.remove('activeGalleryBtn');
+
+    allPicturesContainer.replaceChildren();
+
+    allHolidayProgramsImages.forEach(pictureSrc => {
+        const eachPictureDiv = document.createElement('div');
+        const eachImgTag = document.createElement('img');
+
+        eachImgTag.src = pictureSrc;
+        eachImgTag.alt = 'Picture';
+
+        eachPictureDiv.classList.add('eachPictureDiv');
+        eachPictureDiv.appendChild(eachImgTag);
+
+        eachImgTag.addEventListener('click', () => {
+            fullScreenImage.src = pictureSrc;
+            popUpPage.style.display = 'flex';
+            document.body.classList.add('noScroll');
+        });
+
+        allPicturesContainer.appendChild(eachPictureDiv);
+    });
+
+    closeButton.addEventListener('click', () => {
+        popUpPage.style.display = 'none';
+        document.body.classList.remove('noScroll');
+    });
+
+    popUpPage.addEventListener('click', (event) => {
+        if (event.target === popUpPage) {
+            popUpPage.style.display = 'none';
+            document.body.classList.remove('noScroll');
+        }
+    });
+});
+
+// displaying special program images only on specialButton click
+specialButton.addEventListener('click', () => {
+    specialButton.classList.add('activeGalleryBtn');
+    artAndCraftButton.classList.remove('activeGalleryBtn');
+    danceButton.classList.remove('activeGalleryBtn');
+    devotionButton.classList.remove('activeGalleryBtn');
+    dinnerButton.classList.remove('activeGalleryBtn');
+    holidayButton.classList.remove('activeGalleryBtn');
+    allImagesButton.classList.remove('activeGalleryBtn');
+
+    allPicturesContainer.replaceChildren();
+
+    allSpecialProgramsImages.forEach(pictureSrc => {
+        const eachPictureDiv = document.createElement('div');
+        const eachImgTag = document.createElement('img');
+
+        eachImgTag.src = pictureSrc;
+        eachImgTag.alt = 'Picture';
+
+        eachPictureDiv.classList.add('eachPictureDiv');
+        eachPictureDiv.appendChild(eachImgTag);
+
+        eachImgTag.addEventListener('click', () => {
+            fullScreenImage.src = pictureSrc;
+            popUpPage.style.display = 'flex';
+            document.body.classList.add('noScroll');
+        });
+
+        allPicturesContainer.appendChild(eachPictureDiv);
+    });
+
+    closeButton.addEventListener('click', () => {
+        popUpPage.style.display = 'none';
+        document.body.classList.remove('noScroll');
+    });
+
+    popUpPage.addEventListener('click', (event) => {
+        if (event.target === popUpPage) {
+            popUpPage.style.display = 'none';
+            document.body.classList.remove('noScroll');
+        }
+    });
+});
