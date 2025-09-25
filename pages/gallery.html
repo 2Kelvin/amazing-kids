@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="../styles/gallery.css">
 </head>
+
 <body>
+    <!-- gallery title and logo -->
     <div class="galleryMenu">
         <img src="../images/akc_logo.webp" alt="Amazing Kids logo">
         <h1>Gallery</h1>
         <div></div>
     </div>
 
-    
+    <!-- all image cateory buttons -->
+     <section id="galleryButtonsDiv">
+        <button>Art and Craft</button>
+        <button>Dance</button>
+        <button>Devotion & Life Skills</button>
+        <button id="idButton">Dinner</button#>
+        <button>Holiday Program</button>
+        <button>Special Program</button>
+     </section>
+
+    <!-- all images here -->
+    <section id="allPicturesContainer"></section>
+
+    <!-- fullscreen image page -->
+    <div id="popUpPage">
+        <div id="popUpContent">
+            <span id="closeButton">&times;</span>
+            <img id="fullScreenImage" src="" alt="Fullscreen Image">
+        </div>
+    </div>
 
     <!-- javascript -->
-     <script src="../scripts/gallery.js"></script>
+    <script src="../scripts/gallery.js"></script>
 </body>
+
 </html>
