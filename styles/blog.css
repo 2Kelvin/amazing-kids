@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.galleryMenu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.galleryMenu h1 {
+    color: red;
+}
+
+.galleryMenu img {
+    height: 30px;
+    width: 110px;
+}

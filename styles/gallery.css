@@ -13,10 +13,9 @@ body {
 }
 
 .galleryMenu {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    justify-content: space-between;
-    /* background-color: blue; */
 }
 
 .galleryMenu h1 {
@@ -25,6 +24,7 @@ body {
 
 .galleryMenu img {
     height: 30px;
+    width: 110px;
 }
 
 #galleryButtonsDiv {
