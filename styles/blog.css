@@ -5,7 +5,7 @@ body {
 
 .galleryMenu {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 50px;
     align-items: center;
 }
 
@@ -15,5 +15,42 @@ body {
 
 .galleryMenu img {
     height: 30px;
-    width: 110px;
+    width: 120px;
+}
+
+#blogContainer {
+    padding: 0 20px;
+    display: grid;
+    gap: 20px;
+}
+
+#blogContainer .blogCard {
+    padding-bottom: 20px;
+}
+
+#blogContainer .blogCard img {
+    width: 100%;
+    height: 400px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.blogCardDateClubDiv {
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    font-size: 0.9rem;
+}
+
+#blogContainer .blogCard h2 {
+    margin: 0;
+}
+
+#blogContainer .blogCard button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#blogContainer .blogCard button span {
+    margin-left: 10px;
 }

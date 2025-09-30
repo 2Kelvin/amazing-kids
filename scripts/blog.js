@@ -1,26 +1,331 @@
 // getting HTML elements
 const blogContainer = document.getElementById('blogContainer');
 
-const evergreenBlog = {
-    imgSrc: '../images/facilitators/kev_main.jpeg',
-    date: 'September 11, 2024',
-    heading: 'Our Adventure at Evergreen Park',
-    intro: 'Lorem ipsum, dolor sniam quas distinctio velit, laudantium in doloribus tenetur recusandae. Small intro. First lines of blog',
+// data objects
+const picnicArboretum = {
+    imgSrc: '../images/blog/picnic-arboretum/picnicArboretum.jpg',
+    date: 'June 16, 2023',
+    heading: 'A Picnic At The Arboretum',
+    intro: 'Hello everyone and I hope that you have all been keeping well. We at amazing kids are doing great . We have started a new series called Amazing Kids in the wild and its very exciting.',
 };
 
-// blog cards data
+const evergreenPark = {
+    imgSrc: '../images/blog/evergreen-park/evergreenPark.jpeg',
+    date: 'June 2, 2023',
+    heading: 'Our Adventure At Evergreen Park',
+    intro: 'Howdy!! Good people and happy new month to you. We are half way through the year and we thank God for this far. As one of our ice-breakers we went for a trip to evergreen Park. Evergreen park is on Kiambu rd, Nairobi Kenya.',
+};
+
+const yourBrand = {
+    imgSrc: '../images/blog/your-brand/yourBrand.jpg',
+    date: 'March 24, 2023',
+    heading: 'What Is Your Brand?',
+    intro: 'Hello there. Nice seeing you here again. Put on your reading glasses, sit back and let us take you through the 2nd of April. We arrived in the morning, said hi to our friends and teachers and were ready for the day',
+};
+
+const mustardSeed = {
+    imgSrc: '../images/blog/mustard-seed/mustardSeed.jpeg',
+    date: 'March 16, 2023',
+    heading: 'Small As A Mustard Seed',
+    intro: 'Hello there our beloved readers. We hope that you have been keeping well. We are so excited to start our new season where we will be learning about entrepreneurship and',
+};
+
+const stockTake = {
+    imgSrc: '../images/blog/stock-take/stockTake.jpeg',
+    date: 'March 9, 2023',
+    heading: 'Stock Take #1',
+    intro: 'Hello there our Amazing readers and happy new month to you. We have finished our first series of goal settings and it is important to take stock of what we',
+};
+
+const amConfident = {
+    imgSrc: '../images/blog/am-confident/amConfident.jpeg',
+    date: 'March 2, 2023',
+    heading: 'I Am Confident',
+    intro: 'Hello there our amazing readers!! It is always a pleasure to share with you what we learn at Amazing Kids Club. We have been focusing on setting goals and gradually',
+};
+
+const amazingHabits = {
+    imgSrc: '../images/blog/amazing-habits/amazingHabits.jpg',
+    date: 'February 24, 2023',
+    heading: 'Amazing Habits',
+    intro: 'Hello our dear readers!. We have missed you and hope that you are well. This week, after setting our goals and putting them down on paper, it was now time',
+};
+
+const ourVision = {
+    imgSrc: '../images/blog/our-vision/ourVision.jpeg',
+    date: 'February 16, 2023',
+    heading: 'Our Vision',
+    intro: 'Hello, amazing readers. A wise man once said that if you aim for the moon, you might just hit the stars, and if you aim at nothing, you will hit nothing.',
+};
+
+const goals2023 = {
+    imgSrc: '../images/blog/goals-year-2023/goals2023.png',
+    date: 'February 9, 2023',
+    heading: '2023 Goals!',
+    intro: 'Happy New Year Everyone!!! It feels good to be back at our favorite creating center where learning is fun. This week our lesson was on goal setting. A goal is',
+};
+
+const letter2022 = {
+    imgSrc: '../images/blog/letter-2022/letter2022.jpg',
+    date: 'December 15, 2022',
+    heading: 'A Letter To 2022',
+    intro: 'Hello there amazing readers! We finally made it to the end of the year. And the 17th of December was the day to reminisce all we had accomplished during the',
+};
+
+const decemberSpecialBasketball = {
+    imgSrc: '../images/blog/december-special-basketball/decBasketball.jpg',
+    date: 'December 15, 2022',
+    heading: 'December Special: Let\s Play basketball',
+    intro: 'Thank you for tuning back in for this week’s read. Let us take you through the day. We started the day off with God like we always do. We prayed',
+};
+
+const decemberSpecialJava = {
+    imgSrc: '../images/blog/december-special-java/decJava.jpg',
+    date: 'December 8, 2022',
+    heading: 'December Special: A Trip To The Java Factory',
+    intro: 'Hey there, come along as we take you through the academic trip we had at the Java factory last Saturday. On this beautiful day, we were all psyched up for',
+};
+
+const launchingTheBusiness = {
+    imgSrc: '../images/blog/launching-the-business/launchingBusiness.jpg',
+    date: 'December 1, 2022',
+    heading: 'Launching The Business',
+    intro: 'All our effort for the whole season was building up to this day, and the moment was finally here with us. The main reason for having a business idea, branding',
+};
+
+const moneyManagementCalculations = {
+    imgSrc: '../images/blog/money-management-calculations-and-change/moneyCalculations.jpg',
+    date: 'November 24, 2022',
+    heading: 'Money Management: Calculations And Change',
+    intro: 'For a kid who\’s ready to get out there, launch their business and finally make some money, the one essential skill you\’re going to need and use regularly is your',
+};
+const creatingBusinessLogo = {
+    imgSrc: '../images/blog/creating-business-logo/creatingBizLogo.png',
+    date: 'November 17, 2022',
+    heading: 'Crreating A Business Logo',
+    intro: 'A business logo is the face of your business. It identifies your business. When people think about your business, the first thing they see is your logo. Just the same',
+};
+const pitchingTheBusiness = {
+    imgSrc: '../images/blog/pitching-the-business/pitchingBiz.jpg',
+    date: 'November 10, 2022',
+    heading: 'Pitching The Business',
+    intro: 'Have you ever been in a position where you were expected to give a presentation? If so, what did you do? Did you wait for the last day and just gave the speech or did you prepare for it in front of a mirror with yourself or in front of your friends and family?',
+};
+
+const creatingBusinessName = {
+    imgSrc: '../images/blog/creating-a-business-name/creatingBusinessName.jpg',
+    date: 'November 3, 2022',
+    heading: 'Creating A Business Name',
+    intro: 'One of the things people pay little attention to but is actually very important, is a business name. A catchy or creative business name can bring you more customers, create a brand and improve your business in general.',
+};
+
+const businessIdea = {
+    imgSrc: '../images/blog/business-idea/bizIdea.jpg',
+    date: 'October 20, 2022',
+    heading: 'The Business Idea',
+    intro: 'We can all agree that the main goal of a business is to make money. And the only way to make money is by solving a particular problem in the',
+};
+
+const selfDiscipline = {
+    imgSrc: '../images/blog/self-discipline/selfDiscipline.jpg',
+    date: 'October 13, 2022',
+    heading: 'Self Discipline',
+    intro: 'Have you ever been in a tricky situation because you waited until the last minute to do something; may it be, studying for your exams or doing your homework? If',
+};
+
+const hardWork = {
+    imgSrc: '../images/blog/hard-work/hardWork.png',
+    date: 'October 6, 2022',
+    heading: 'Hard-work',
+    intro: 'To some, it means giving it your all, to others, putting in a lot of effort into something and to others it plain out means determination. And to these people',
+};
+
+const changeWorld = {
+    imgSrc: '../images/blog/change-the-world/changeWorld.jpg',
+    date: 'September 29, 2022',
+    heading: 'How Will You Change The World?',
+    intro: 'Nelson Mandela and Wangari Maathai are some of our heroes who are well known for changing the world. Wangari Maathai, one of our own, who had a deep love for',
+};
+
+const passionateAbout = {
+    imgSrc: '../images/blog/passionate-about/passionateAbout.jpg',
+    date: 'September 22, 2022',
+    heading: 'What Are You Passionate About?',
+    intro: 'What do you really love? Or as some might say, what do you enjoy doing? That thing that no one has to push you to do because you\’re so into it you find yourself doing it with ease.',
+};
+
+const myAchievements = {
+    imgSrc: '../images/blog/my-achievements/myAchievements.jpg',
+    date: 'September 15, 2022',
+    heading: 'My Achievements',
+    intro: 'Achievement means accomplishing something through hard-work, courage or skill. It is important to note that in order to accomplish something, you really have to work for it. Just dreaming about',
+};
+
+const whoAmI = {
+    imgSrc: '../images/blog/who-am-i/whoAmI.jpg',
+    date: 'September 8, 2022',
+    heading: 'Who Am I?',
+    intro: 'Question, who is …………(insert your name)? Are you beautiful, kind, daring, confident, funny, strong, friendly? Pause for a moment and think about this for a minute. You might be surprised',
+};
+
+const careerTalkDay = {
+    imgSrc: '../images/blog/career-talk-day/careerTalkDay.jpg',
+    date: 'August 4, 2022',
+    heading: 'Career Talk Day',
+    intro: 'Hello again there. Thank you for coming back to hang out with us. Let us take you through the 30th of June AKA ‘Career Talk Day’. On arrival we had a mini-treasure hunt.',
+};
+
+const museumTrip = {
+    imgSrc: '../images/blog/museum-trip/museumTrip.jpg',
+    date: 'June 28, 2022',
+    heading: 'A Trip To The Museum',
+    intro: 'When it comes to arriving in style, you know no kids in Nairobi do it better than the Amazing Kids😎 We gathered around for a quick catch up and head count.',
+};
+
+const july16th = {
+    imgSrc: '../images/blog/july16th/july16th.jpg',
+    date: 'June 21, 2022',
+    heading: 'July 16th',
+    intro: 'Hello and welcome back! Before we do a quick catch up, let’s do a warm up first. Hahaha, what a weird set of warm up moves. It was definitely fun though',
+};
+
+const budgetting = {
+    imgSrc: '../images/blog/budgetting/budgetting.jpg',
+    date: 'June 14, 2022',
+    heading: 'Budgetting',
+    intro: 'Hello there, nice to see you. We really appreciate you here at Amazing Kids for sparing your precious time to come join us. Before we even do anything else, let\’s',
+};
+
+const july2nd = {
+    imgSrc: '../images/blog/july2nd/july2nd.jpg',
+    date: 'June 7, 2022',
+    heading: 'July 2nd',
+    intro: 'Treasure hunts are fun, challenging and rewarding. The 2nd of July started with one in the morning. There had to be some entry rules; to participate, you had to do',
+};
+
+const resilience = {
+    imgSrc: '../images/blog/resilience/resilience.jpg',
+    date: 'June 30, 2022',
+    heading: 'Resilience',
+    intro: 'What is it about successful people that makes them stand out. Could it be that unlike others, they were just born lucky? No, it can’t be. I think it\’s the resilience in them to see things through. ',
+};
+
+const positivity = {
+    imgSrc: '../images/blog/positivity/positivity.jpg',
+    date: 'June 23, 2022',
+    heading: 'Positivity',
+    intro: 'When you have a positive attitude, you have a clearer and better look on life. Positivity helps bring joy and good things to your life. Ask this guy.',
+};
+
+const letterFromAnOldFriend = {
+    imgSrc: '../images/blog/letter-from-an-ld-friend/letterFromAnOldFriend.jpg',
+    date: 'June 16, 2022',
+    heading: 'Let\'s Do A Spelling Bee',
+    intro: 'Ah, letters! There’s just something about them that brings a feel good energy and gives a trip to memory lane of some good old times. On arrival on June 11th',
+};
+
+const spellingBee = {
+    imgSrc: '../images/blog/spelling-bee/spellingBee.jpg',
+    date: 'June 9, 2022',
+    heading: 'Let\'s Do A Spelling Bee',
+    intro: 'What is it about Amazing Kids’ Saturdays that screams out fun? Don’t believe me, let me explain. We started our day with some good old spelling bee game. Guys teamed',
+};
+
+const biggerPerson = {
+    imgSrc: '../images/blog/bigger-person/biggerPerson.jpg',
+    date: 'June 2, 2022',
+    heading: 'Being The Bigger Person',
+    intro: 'Hi Welcome and please take a seat over there. Don’t be shy engage with the others in completing the crossword game. After you’re done, come play this game with',
+};
+
+const triviaAnyone = {
+    imgSrc: '../images/blog/trivia-anyone/triviaAnyone.jpg',
+    date: 'May 26, 2022',
+    heading: 'Trivia Anyone?',
+    intro: 'As we all know by now, Amazing Kids sessions are always fun and creative. The Saturday of 21st May was no different. First warm up with us for a minute',
+};
+
+const may14th = {
+    imgSrc: '../images/blog/may14th/may14th.jpg',
+    date: 'May 14, 2022',
+    heading: '14th Of May',
+    intro: 'Painting, games, learning, fun and games were all the highlights of this day. Follow along to experience it too, through us of course🙂. Did you know that King Saul was',
+};
+
+const may7th = {
+    imgSrc: '../images/blog/may7th/may7th.jpg',
+    date: 'May 7, 2022',
+    heading: '7th Of May',
+    intro: 'After a 3 weeks April holiday break, the Amazing Kids Club finally resumed on the 7th of May. Grab on your seat belts and let us take you through the day.',
+};
+
+const royalExperience = {
+    imgSrc: '../images/blog/royal-experience/royalExperience.jpg',
+    date: 'April 9, 2022',
+    heading: 'The Royal Experience',
+    intro: 'On the 9th of April, The Amazing Kids Club decided to pay a visit to the Royal Golf Club. Little did we know that this would be a fun packed day full of exciting activities that we would not forget.',
+};
+
+const tabithaStory = {
+    imgSrc: '../images/blog/story-of-tabitha/storyOfTabitha.jpg',
+    date: 'April 14, 2022',
+    heading: 'The Story Of Tabitha',
+    intro: 'Let us take you through the day and also learn all about love and compassion. We start the day with a few interesting games. The two in particular that stand out are the “Broken Telephone” and “Concentration Game.”',
+};
+
+const april2nd = {
+    imgSrc: '../images/blog/april2nd/april2nd.jpg',
+    date: 'April 22, 2022',
+    heading: '2nd April 2022',
+    intro: 'Hello there our good readers, we hope that you have been well and keeping safe. Last week we learnt about entrepreneurship and how to value the money that we have through identifying our different wants and needs.',
+};
+
+// all data
 const blogData = [
-    evergreenBlog,
-    {
-        imgSrc: '../images/facilitators/moses_main.jpeg', // same image for simplicity
-        date: 'September 15, 2024', // different date
-        heading: 'Another Park Visit', // different heading
-        intro: 'A second blog post entry with different content.', // different intro
-    }
- ];
+    picnicArboretum,
+    evergreenPark,
+    yourBrand,
+    mustardSeed,
+    stockTake,
+    amConfident,
+    amazingHabits,
+    ourVision,
+    goals2023,
+    letter2022,
+    decemberSpecialBasketball,
+    decemberSpecialJava,
+    launchingTheBusiness,
+    moneyManagementCalculations,
+    creatingBusinessLogo,
+    pitchingTheBusiness,
+    creatingBusinessName,
+    businessIdea,
+    selfDiscipline,
+    hardWork,
+    changeWorld,
+    passionateAbout,
+    myAchievements,
+    whoAmI,
+    careerTalkDay,
+    museumTrip,
+    july16th,
+    budgetting,
+    july2nd,
+    resilience,
+    positivity,
+    letterFromAnOldFriend,
+    spellingBee,
+    biggerPerson,
+    triviaAnyone,
+    may14th,
+    may7th,
+    royalExperience,
+    tabithaStory,
+    april2nd,
+];
 
 // building a reusable blog card
-blogData.forEach(eacCardData => {
+blogData.forEach(eachCardData => {
     // creating reusable blogCard elements
     const blogCard = document.createElement('div');
     const blogCardImg = document.createElement('img');
@@ -37,23 +342,25 @@ blogData.forEach(eacCardData => {
 
     // assigning img attributes data + appending to parent card div
     blogCardImg.alt = 'Blog Picture';
-    blogCardImg.src = eacCardData.imgSrc;
+    blogCardImg.src = eachCardData.imgSrc;
     blogCard.appendChild(blogCardImg);
 
     // adding date and club content and appending to div (with an added class) + appending to parent card div
     blogCardDateClubDiv.classList.add('blogCardDateClubDiv');
-    blogCardParaDate.textContent = eacCardData.date;
-    blogCardParaClub.textContent = 'Amazing Kids';
-    blogCardDateClubDiv.appendChild(blogCardParaDate);
+    blogCardParaClub.textContent = 'Amazing Kids Kenya';
+    blogCardParaDate.textContent = eachCardData.date;
     blogCardDateClubDiv.appendChild(blogCardParaClub);
+    blogCardDateClubDiv.appendChild(blogCardParaDate);
+    blogCardDateClubDiv.classList.add('blogCardDateClubDiv');
     blogCard.appendChild(blogCardDateClubDiv);
 
     // adding heading content + appending to parent card div
-    blogCardH2.textContent = eacCardData.heading;
+    blogCardH2.textContent = eachCardData.heading;
     blogCard.appendChild(blogCardH2);
 
     // adding intro content + appending to parent card div
-    blogCardIntro.textContent = eacCardData.intro;
+    // remove extra whitespaces at ends, slice to 147 letters and add ... at the end
+    blogCardIntro.textContent = eachCardData.intro.trim().slice(0, 146).concat('...');
     blogCard.appendChild(blogCardIntro);
 
     // adding button content + appending to parent card div
