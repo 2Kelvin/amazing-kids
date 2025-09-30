@@ -7,6 +7,7 @@ const picnicArboretum = {
     date: 'June 16, 2023',
     heading: 'A Picnic At The Arboretum',
     intro: 'Hello everyone and I hope that you have all been keeping well. We at amazing kids are doing great . We have started a new series called Amazing Kids in the wild and its very exciting.',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const evergreenPark = {
@@ -14,6 +15,7 @@ const evergreenPark = {
     date: 'June 2, 2023',
     heading: 'Our Adventure At Evergreen Park',
     intro: 'Howdy!! Good people and happy new month to you. We are half way through the year and we thank God for this far. As one of our ice-breakers we went for a trip to evergreen Park. Evergreen park is on Kiambu rd, Nairobi Kenya.',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const yourBrand = {
@@ -21,6 +23,7 @@ const yourBrand = {
     date: 'March 24, 2023',
     heading: 'What Is Your Brand?',
     intro: 'Hello there. Nice seeing you here again. Put on your reading glasses, sit back and let us take you through the 2nd of April. We arrived in the morning, said hi to our friends and teachers and were ready for the day',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const mustardSeed = {
@@ -28,6 +31,7 @@ const mustardSeed = {
     date: 'March 16, 2023',
     heading: 'Small As A Mustard Seed',
     intro: 'Hello there our beloved readers. We hope that you have been keeping well. We are so excited to start our new season where we will be learning about entrepreneurship and',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const stockTake = {
@@ -35,6 +39,7 @@ const stockTake = {
     date: 'March 9, 2023',
     heading: 'Stock Take #1',
     intro: 'Hello there our Amazing readers and happy new month to you. We have finished our first series of goal settings and it is important to take stock of what we',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const amConfident = {
@@ -42,6 +47,7 @@ const amConfident = {
     date: 'March 2, 2023',
     heading: 'I Am Confident',
     intro: 'Hello there our amazing readers!! It is always a pleasure to share with you what we learn at Amazing Kids Club. We have been focusing on setting goals and gradually',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const amazingHabits = {
@@ -49,6 +55,7 @@ const amazingHabits = {
     date: 'February 24, 2023',
     heading: 'Amazing Habits',
     intro: 'Hello our dear readers!. We have missed you and hope that you are well. This week, after setting our goals and putting them down on paper, it was now time',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const ourVision = {
@@ -56,6 +63,7 @@ const ourVision = {
     date: 'February 16, 2023',
     heading: 'Our Vision',
     intro: 'Hello, amazing readers. A wise man once said that if you aim for the moon, you might just hit the stars, and if you aim at nothing, you will hit nothing.',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const goals2023 = {
@@ -63,6 +71,7 @@ const goals2023 = {
     date: 'February 9, 2023',
     heading: '2023 Goals!',
     intro: 'Happy New Year Everyone!!! It feels good to be back at our favorite creating center where learning is fun. This week our lesson was on goal setting. A goal is',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const letter2022 = {
@@ -70,13 +79,15 @@ const letter2022 = {
     date: 'December 15, 2022',
     heading: 'A Letter To 2022',
     intro: 'Hello there amazing readers! We finally made it to the end of the year. And the 17th of December was the day to reminisce all we had accomplished during the',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const decemberSpecialBasketball = {
     imgSrc: '../images/blog/december-special-basketball/decBasketball.jpg',
     date: 'December 15, 2022',
     heading: 'December Special: Let\s Play basketball',
-    intro: 'Thank you for tuning back in for this week’s read. Let us take you through the day. We started the day off with God like we always do. We prayed',
+    intro: 'Thank you for tuning back in for this week\’s read. Let us take you through the day. We started the day off with God like we always do. We prayed',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const decemberSpecialJava = {
@@ -84,6 +95,7 @@ const decemberSpecialJava = {
     date: 'December 8, 2022',
     heading: 'December Special: A Trip To The Java Factory',
     intro: 'Hey there, come along as we take you through the academic trip we had at the Java factory last Saturday. On this beautiful day, we were all psyched up for',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const launchingTheBusiness = {
@@ -91,6 +103,7 @@ const launchingTheBusiness = {
     date: 'December 1, 2022',
     heading: 'Launching The Business',
     intro: 'All our effort for the whole season was building up to this day, and the moment was finally here with us. The main reason for having a business idea, branding',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const moneyManagementCalculations = {
@@ -98,18 +111,21 @@ const moneyManagementCalculations = {
     date: 'November 24, 2022',
     heading: 'Money Management: Calculations And Change',
     intro: 'For a kid who\’s ready to get out there, launch their business and finally make some money, the one essential skill you\’re going to need and use regularly is your',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 const creatingBusinessLogo = {
     imgSrc: '../images/blog/creating-business-logo/creatingBizLogo.png',
     date: 'November 17, 2022',
     heading: 'Crreating A Business Logo',
     intro: 'A business logo is the face of your business. It identifies your business. When people think about your business, the first thing they see is your logo. Just the same',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 const pitchingTheBusiness = {
     imgSrc: '../images/blog/pitching-the-business/pitchingBiz.jpg',
     date: 'November 10, 2022',
     heading: 'Pitching The Business',
     intro: 'Have you ever been in a position where you were expected to give a presentation? If so, what did you do? Did you wait for the last day and just gave the speech or did you prepare for it in front of a mirror with yourself or in front of your friends and family?',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const creatingBusinessName = {
@@ -117,6 +133,7 @@ const creatingBusinessName = {
     date: 'November 3, 2022',
     heading: 'Creating A Business Name',
     intro: 'One of the things people pay little attention to but is actually very important, is a business name. A catchy or creative business name can bring you more customers, create a brand and improve your business in general.',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const businessIdea = {
@@ -124,6 +141,7 @@ const businessIdea = {
     date: 'October 20, 2022',
     heading: 'The Business Idea',
     intro: 'We can all agree that the main goal of a business is to make money. And the only way to make money is by solving a particular problem in the',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const selfDiscipline = {
@@ -131,6 +149,7 @@ const selfDiscipline = {
     date: 'October 13, 2022',
     heading: 'Self Discipline',
     intro: 'Have you ever been in a tricky situation because you waited until the last minute to do something; may it be, studying for your exams or doing your homework? If',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const hardWork = {
@@ -138,6 +157,7 @@ const hardWork = {
     date: 'October 6, 2022',
     heading: 'Hard-work',
     intro: 'To some, it means giving it your all, to others, putting in a lot of effort into something and to others it plain out means determination. And to these people',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const changeWorld = {
@@ -145,6 +165,7 @@ const changeWorld = {
     date: 'September 29, 2022',
     heading: 'How Will You Change The World?',
     intro: 'Nelson Mandela and Wangari Maathai are some of our heroes who are well known for changing the world. Wangari Maathai, one of our own, who had a deep love for',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const passionateAbout = {
@@ -152,6 +173,7 @@ const passionateAbout = {
     date: 'September 22, 2022',
     heading: 'What Are You Passionate About?',
     intro: 'What do you really love? Or as some might say, what do you enjoy doing? That thing that no one has to push you to do because you\’re so into it you find yourself doing it with ease.',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const myAchievements = {
@@ -159,6 +181,7 @@ const myAchievements = {
     date: 'September 15, 2022',
     heading: 'My Achievements',
     intro: 'Achievement means accomplishing something through hard-work, courage or skill. It is important to note that in order to accomplish something, you really have to work for it. Just dreaming about',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const whoAmI = {
@@ -166,13 +189,15 @@ const whoAmI = {
     date: 'September 8, 2022',
     heading: 'Who Am I?',
     intro: 'Question, who is …………(insert your name)? Are you beautiful, kind, daring, confident, funny, strong, friendly? Pause for a moment and think about this for a minute. You might be surprised',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const careerTalkDay = {
     imgSrc: '../images/blog/career-talk-day/careerTalkDay.jpg',
     date: 'August 4, 2022',
     heading: 'Career Talk Day',
-    intro: 'Hello again there. Thank you for coming back to hang out with us. Let us take you through the 30th of June AKA ‘Career Talk Day’. On arrival we had a mini-treasure hunt.',
+    intro: 'Hello again there. Thank you for coming back to hang out with us. Let us take you through the 30th of June AKA "Career Talk Day". On arrival we had a mini-treasure hunt.',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const museumTrip = {
@@ -180,6 +205,7 @@ const museumTrip = {
     date: 'June 28, 2022',
     heading: 'A Trip To The Museum',
     intro: 'When it comes to arriving in style, you know no kids in Nairobi do it better than the Amazing Kids😎 We gathered around for a quick catch up and head count.',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const july16th = {
@@ -187,6 +213,7 @@ const july16th = {
     date: 'June 21, 2022',
     heading: 'July 16th',
     intro: 'Hello and welcome back! Before we do a quick catch up, let’s do a warm up first. Hahaha, what a weird set of warm up moves. It was definitely fun though',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const budgetting = {
@@ -194,6 +221,7 @@ const budgetting = {
     date: 'June 14, 2022',
     heading: 'Budgetting',
     intro: 'Hello there, nice to see you. We really appreciate you here at Amazing Kids for sparing your precious time to come join us. Before we even do anything else, let\’s',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const july2nd = {
@@ -201,13 +229,15 @@ const july2nd = {
     date: 'June 7, 2022',
     heading: 'July 2nd',
     intro: 'Treasure hunts are fun, challenging and rewarding. The 2nd of July started with one in the morning. There had to be some entry rules; to participate, you had to do',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const resilience = {
     imgSrc: '../images/blog/resilience/resilience.jpg',
     date: 'June 30, 2022',
     heading: 'Resilience',
-    intro: 'What is it about successful people that makes them stand out. Could it be that unlike others, they were just born lucky? No, it can’t be. I think it\’s the resilience in them to see things through. ',
+    intro: 'What is it about successful people that makes them stand out. Could it be that unlike others, they were just born lucky? No, it can\’t be. I think it\’s the resilience in them to see things through. ',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const positivity = {
@@ -215,6 +245,7 @@ const positivity = {
     date: 'June 23, 2022',
     heading: 'Positivity',
     intro: 'When you have a positive attitude, you have a clearer and better look on life. Positivity helps bring joy and good things to your life. Ask this guy.',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const letterFromAnOldFriend = {
@@ -222,6 +253,7 @@ const letterFromAnOldFriend = {
     date: 'June 16, 2022',
     heading: 'Let\'s Do A Spelling Bee',
     intro: 'Ah, letters! There’s just something about them that brings a feel good energy and gives a trip to memory lane of some good old times. On arrival on June 11th',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const spellingBee = {
@@ -229,6 +261,7 @@ const spellingBee = {
     date: 'June 9, 2022',
     heading: 'Let\'s Do A Spelling Bee',
     intro: 'What is it about Amazing Kids’ Saturdays that screams out fun? Don’t believe me, let me explain. We started our day with some good old spelling bee game. Guys teamed',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const biggerPerson = {
@@ -236,6 +269,7 @@ const biggerPerson = {
     date: 'June 2, 2022',
     heading: 'Being The Bigger Person',
     intro: 'Hi Welcome and please take a seat over there. Don’t be shy engage with the others in completing the crossword game. After you’re done, come play this game with',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const triviaAnyone = {
@@ -243,6 +277,7 @@ const triviaAnyone = {
     date: 'May 26, 2022',
     heading: 'Trivia Anyone?',
     intro: 'As we all know by now, Amazing Kids sessions are always fun and creative. The Saturday of 21st May was no different. First warm up with us for a minute',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const may14th = {
@@ -250,6 +285,7 @@ const may14th = {
     date: 'May 14, 2022',
     heading: '14th Of May',
     intro: 'Painting, games, learning, fun and games were all the highlights of this day. Follow along to experience it too, through us of course🙂. Did you know that King Saul was',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const may7th = {
@@ -257,6 +293,7 @@ const may7th = {
     date: 'May 7, 2022',
     heading: '7th Of May',
     intro: 'After a 3 weeks April holiday break, the Amazing Kids Club finally resumed on the 7th of May. Grab on your seat belts and let us take you through the day.',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const royalExperience = {
@@ -264,6 +301,7 @@ const royalExperience = {
     date: 'April 9, 2022',
     heading: 'The Royal Experience',
     intro: 'On the 9th of April, The Amazing Kids Club decided to pay a visit to the Royal Golf Club. Little did we know that this would be a fun packed day full of exciting activities that we would not forget.',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const tabithaStory = {
@@ -271,6 +309,7 @@ const tabithaStory = {
     date: 'April 14, 2022',
     heading: 'The Story Of Tabitha',
     intro: 'Let us take you through the day and also learn all about love and compassion. We start the day with a few interesting games. The two in particular that stand out are the “Broken Telephone” and “Concentration Game.”',
+    pageLink: '../pages/blog-pages/april2nd.html',
 };
 
 const april2nd = {
@@ -278,6 +317,7 @@ const april2nd = {
     date: 'April 22, 2022',
     heading: '2nd April 2022',
     intro: 'Hello there our good readers, we hope that you have been well and keeping safe. Last week we learnt about entrepreneurship and how to value the money that we have through identifying our different wants and needs.',
+    pageLink: './blog-pages/april2nd.html',
 };
 
 // all data
@@ -336,6 +376,7 @@ blogData.forEach(eachCardData => {
     const blogCardIntro = document.createElement('p');
     const blogCardButton = document.createElement('button');
     const blogCardButtonSpan = document.createElement('span');
+    const blogCardButtonLink = document.createElement('a');
 
     // adding a class to blogCard
     blogCard.classList.add('blogCard');
@@ -364,10 +405,14 @@ blogData.forEach(eachCardData => {
     blogCard.appendChild(blogCardIntro);
 
     // adding button content + appending to parent card div
+    // also wrapping the button in a link to the blog page details post
     blogCardButton.textContent = 'Read more';
     blogCardButtonSpan.innerHTML = '&rarr;';
+    blogCardButtonLink.href = eachCardData.pageLink;
+    blogCardButtonLink.classList.add('blogCardButtonLink');
     blogCardButton.appendChild(blogCardButtonSpan);
-    blogCard.appendChild(blogCardButton);
+    blogCardButtonLink.appendChild(blogCardButton);
+    blogCard.appendChild(blogCardButtonLink);
 
     // finally adding this card to parent container
     blogContainer.appendChild(blogCard);
