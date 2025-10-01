@@ -293,7 +293,7 @@ const may7th = {
     date: 'May 7, 2022',
     heading: '7th Of May',
     intro: 'After a 3 weeks April holiday break, the Amazing Kids Club finally resumed on the 7th of May. Grab on your seat belts and let us take you through the day.',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/may7th.html',
 };
 
 const royalExperience = {
