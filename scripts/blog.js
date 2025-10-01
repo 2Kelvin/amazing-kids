@@ -249,19 +249,19 @@ const positivity = {
 };
 
 const letterFromAnOldFriend = {
-    imgSrc: '../images/blog/letter-from-an-ld-friend/letterFromAnOldFriend.jpg',
+    imgSrc: '../images/blog/letter-from-an-old-friend/letterFromAnOldFriend.jpg',
     date: 'June 16, 2022',
-    heading: 'Let\'s Do A Spelling Bee',
-    intro: 'Ah, letters! There’s just something about them that brings a feel good energy and gives a trip to memory lane of some good old times. On arrival on June 11th',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    heading: 'A Letter From An Old Friend',
+    intro: 'Ah, letters! There\’s just something about them that brings a feel good energy and gives a trip to memory lane of some good old times. On arrival on June 11th',
+    pageLink: './blog-pages/letterFromOldFriend.html',
 };
 
 const spellingBee = {
     imgSrc: '../images/blog/spelling-bee/spellingBee.jpg',
     date: 'June 9, 2022',
     heading: 'Let\'s Do A Spelling Bee',
-    intro: 'What is it about Amazing Kids’ Saturdays that screams out fun? Don’t believe me, let me explain. We started our day with some good old spelling bee game. Guys teamed',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    intro: 'What is it about Amazing Kids\’ Saturdays that screams out fun? Don’t believe me, let me explain. We started our day with some good old spelling bee game. Guys teamed',
+    pageLink: './blog-pages/spellingBee.html',
 };
 
 const biggerPerson = {
@@ -269,7 +269,7 @@ const biggerPerson = {
     date: 'June 2, 2022',
     heading: 'Being The Bigger Person',
     intro: 'Hi Welcome and please take a seat over there. Don\’t be shy engage with the others in completing the crossword game. After you’re done, come play this game with',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/biggerPerson.html',
 };
 
 const triviaAnyone = {
@@ -277,7 +277,7 @@ const triviaAnyone = {
     date: 'May 26, 2022',
     heading: 'Trivia Anyone?',
     intro: 'As we all know by now, Amazing Kids sessions are always fun and creative. The Saturday of 21st May was no different. First warm up with us for a minute',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/triviaAnyone.html',
 };
 
 const may14th = {
