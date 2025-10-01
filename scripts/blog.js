@@ -245,7 +245,7 @@ const positivity = {
     date: 'June 23, 2022',
     heading: 'Positivity',
     intro: 'When you have a positive attitude, you have a clearer and better look on life. Positivity helps bring joy and good things to your life. Ask this guy.',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/positivity.html',
 };
 
 const letterFromAnOldFriend = {
