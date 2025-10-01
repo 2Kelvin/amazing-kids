@@ -285,7 +285,7 @@ const may14th = {
     date: 'May 14, 2022',
     heading: '14th Of May',
     intro: 'Painting, games, learning, fun and games were all the highlights of this day. Follow along to experience it too, through us of course🙂. Did you know that King Saul was',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/may14th.html',
 };
 
 const may7th = {
