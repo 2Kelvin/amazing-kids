@@ -237,7 +237,7 @@ const resilience = {
     date: 'June 30, 2022',
     heading: 'Resilience',
     intro: 'What is it about successful people that makes them stand out. Could it be that unlike others, they were just born lucky? No, it can\’t be. I think it\’s the resilience in them to see things through. ',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/resilience.html',
 };
 
 const positivity = {
