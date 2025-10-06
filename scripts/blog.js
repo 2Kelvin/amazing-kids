@@ -221,15 +221,7 @@ const budgetting = {
     date: 'June 14, 2022',
     heading: 'Budgetting',
     intro: 'Hello there, nice to see you. We really appreciate you here at Amazing Kids for sparing your precious time to come join us. Before we even do anything else, let\’s',
-    pageLink: './blog-pages/storyOfTabitha.html',
-};
-
-const july2nd = {
-    imgSrc: '../images/blog/july2nd/july2nd.jpg',
-    date: 'June 7, 2022',
-    heading: 'July 2nd',
-    intro: 'Treasure hunts are fun, challenging and rewarding. The 2nd of July started with one in the morning. There had to be some entry rules; to participate, you had to do',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/budgetting.html',
 };
 
 const resilience = {
@@ -350,7 +342,6 @@ const blogData = [
     museumTrip,
     july16th,
     budgetting,
-    july2nd,
     resilience,
     positivity,
     letterFromAnOldFriend,
