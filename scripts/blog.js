@@ -197,7 +197,7 @@ const careerTalkDay = {
     date: 'August 4, 2022',
     heading: 'Career Talk Day',
     intro: 'Hello again there. Thank you for coming back to hang out with us. Let us take you through the 30th of June AKA "Career Talk Day". On arrival we had a mini-treasure hunt.',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/careerTalkDay.html',
 };
 
 const museumTrip = {
@@ -205,7 +205,7 @@ const museumTrip = {
     date: 'June 28, 2022',
     heading: 'A Trip To The Museum',
     intro: 'When it comes to arriving in style, you know no kids in Nairobi do it better than the Amazing Kids😎 We gathered around for a quick catch up and head count.',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/museum.html',
 };
 
 const july16th = {
@@ -213,7 +213,7 @@ const july16th = {
     date: 'June 21, 2022',
     heading: 'July 16th',
     intro: 'Hello and welcome back! Before we do a quick catch up, let’s do a warm up first. Hahaha, what a weird set of warm up moves. It was definitely fun though',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/julySixteenth.html',
 };
 
 const budgetting = {
@@ -222,6 +222,14 @@ const budgetting = {
     heading: 'Budgetting',
     intro: 'Hello there, nice to see you. We really appreciate you here at Amazing Kids for sparing your precious time to come join us. Before we even do anything else, let\’s',
     pageLink: './blog-pages/budgetting.html',
+};
+
+const july2nd = {
+    imgSrc: '../images/blog/july2nd/july2nd.jpg',
+    date: 'June 7, 2022',
+    heading: 'July 2nd',
+    intro: 'Treasure hunts are fun, challenging and rewarding. The 2nd of July started with one in the morning. There had to be some entry rules; to participate, you had to do',
+    pageLink: './blog-pages/julySecond.html',
 };
 
 const resilience = {
@@ -342,6 +350,7 @@ const blogData = [
     museumTrip,
     july16th,
     budgetting,
+    july2nd,
     resilience,
     positivity,
     letterFromAnOldFriend,
