@@ -157,7 +157,7 @@ const hardWork = {
     date: 'October 6, 2022',
     heading: 'Hard-work',
     intro: 'To some, it means giving it your all, to others, putting in a lot of effort into something and to others it plain out means determination. And to these people',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/hardWork.html',
 };
 
 const changeWorld = {
@@ -165,7 +165,7 @@ const changeWorld = {
     date: 'September 29, 2022',
     heading: 'How Will You Change The World?',
     intro: 'Nelson Mandela and Wangari Maathai are some of our heroes who are well known for changing the world. Wangari Maathai, one of our own, who had a deep love for',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/changeWorld.html',
 };
 
 const passionateAbout = {
