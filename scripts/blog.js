@@ -173,7 +173,7 @@ const passionateAbout = {
     date: 'September 22, 2022',
     heading: 'What Are You Passionate About?',
     intro: 'What do you really love? Or as some might say, what do you enjoy doing? That thing that no one has to push you to do because you\’re so into it you find yourself doing it with ease.',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/passionateAbout.html',
 };
 
 const myAchievements = {
@@ -181,7 +181,7 @@ const myAchievements = {
     date: 'September 15, 2022',
     heading: 'My Achievements',
     intro: 'Achievement means accomplishing something through hard-work, courage or skill. It is important to note that in order to accomplish something, you really have to work for it. Just dreaming about',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/myAchievements.html',
 };
 
 const whoAmI = {
