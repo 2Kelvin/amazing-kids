@@ -103,7 +103,7 @@ const launchingTheBusiness = {
     date: 'December 1, 2022',
     heading: 'Launching The Business',
     intro: 'All our effort for the whole season was building up to this day, and the moment was finally here with us. The main reason for having a business idea, branding',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/launchingTheBusiness.html',
 };
 
 const moneyManagementCalculations = {
@@ -111,21 +111,21 @@ const moneyManagementCalculations = {
     date: 'November 24, 2022',
     heading: 'Money Management: Calculations And Change',
     intro: 'For a kid who\’s ready to get out there, launch their business and finally make some money, the one essential skill you\’re going to need and use regularly is your',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/moneyManagementCalculations.html',
 };
 const creatingBusinessLogo = {
     imgSrc: '../images/blog/creating-business-logo/creatingBizLogo.png',
     date: 'November 17, 2022',
-    heading: 'Crreating A Business Logo',
+    heading: 'Creating A Business Logo',
     intro: 'A business logo is the face of your business. It identifies your business. When people think about your business, the first thing they see is your logo. Just the same',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/creatingBusinessLogo.html',
 };
 const pitchingTheBusiness = {
     imgSrc: '../images/blog/pitching-the-business/pitchingBiz.jpg',
     date: 'November 10, 2022',
     heading: 'Pitching The Business',
     intro: 'Have you ever been in a position where you were expected to give a presentation? If so, what did you do? Did you wait for the last day and just gave the speech or did you prepare for it in front of a mirror with yourself or in front of your friends and family?',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/pitchingTheBusiness.html',
 };
 
 const creatingBusinessName = {
@@ -133,7 +133,7 @@ const creatingBusinessName = {
     date: 'November 3, 2022',
     heading: 'Creating A Business Name',
     intro: 'One of the things people pay little attention to but is actually very important, is a business name. A catchy or creative business name can bring you more customers, create a brand and improve your business in general.',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/creatingBusinessName.html',
 };
 
 const businessIdea = {
@@ -141,7 +141,7 @@ const businessIdea = {
     date: 'October 20, 2022',
     heading: 'The Business Idea',
     intro: 'We can all agree that the main goal of a business is to make money. And the only way to make money is by solving a particular problem in the',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/businessIdea.html',
 };
 
 const selfDiscipline = {
@@ -149,7 +149,7 @@ const selfDiscipline = {
     date: 'October 13, 2022',
     heading: 'Self Discipline',
     intro: 'Have you ever been in a tricky situation because you waited until the last minute to do something; may it be, studying for your exams or doing your homework? If',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/selfDiscipline.html',
 };
 
 const hardWork = {
