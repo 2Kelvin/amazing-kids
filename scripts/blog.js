@@ -189,7 +189,7 @@ const whoAmI = {
     date: 'September 8, 2022',
     heading: 'Who Am I?',
     intro: 'Question, who is …………(insert your name)? Are you beautiful, kind, daring, confident, funny, strong, friendly? Pause for a moment and think about this for a minute. You might be surprised',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/whoAmI.html',
 };
 
 const careerTalkDay = {
