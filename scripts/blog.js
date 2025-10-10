@@ -79,7 +79,7 @@ const letter2022 = {
     date: 'December 15, 2022',
     heading: 'A Letter To 2022',
     intro: 'Hello there amazing readers! We finally made it to the end of the year. And the 17th of December was the day to reminisce all we had accomplished during the',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/letter2022.html',
 };
 
 const decemberSpecialBasketball = {
@@ -87,7 +87,7 @@ const decemberSpecialBasketball = {
     date: 'December 15, 2022',
     heading: 'December Special: Let\s Play basketball',
     intro: 'Thank you for tuning back in for this week\’s read. Let us take you through the day. We started the day off with God like we always do. We prayed',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/decemberSpecialBasketball.html',
 };
 
 const decemberSpecialJava = {
@@ -95,7 +95,7 @@ const decemberSpecialJava = {
     date: 'December 8, 2022',
     heading: 'December Special: A Trip To The Java Factory',
     intro: 'Hey there, come along as we take you through the academic trip we had at the Java factory last Saturday. On this beautiful day, we were all psyched up for',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/decemberSpecialJava.html',
 };
 
 const launchingTheBusiness = {
