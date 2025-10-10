@@ -7,7 +7,7 @@ const picnicArboretum = {
     date: 'June 16, 2023',
     heading: 'A Picnic At The Arboretum',
     intro: 'Hello everyone and I hope that you have all been keeping well. We at amazing kids are doing great . We have started a new series called Amazing Kids in the wild and its very exciting.',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/picnicArboretum.html',
 };
 
 const evergreenPark = {
@@ -15,7 +15,7 @@ const evergreenPark = {
     date: 'June 2, 2023',
     heading: 'Our Adventure At Evergreen Park',
     intro: 'Howdy!! Good people and happy new month to you. We are half way through the year and we thank God for this far. As one of our ice-breakers we went for a trip to evergreen Park. Evergreen park is on Kiambu rd, Nairobi Kenya.',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/evergreenPark.html',
 };
 
 const yourBrand = {
@@ -23,7 +23,7 @@ const yourBrand = {
     date: 'March 24, 2023',
     heading: 'What Is Your Brand?',
     intro: 'Hello there. Nice seeing you here again. Put on your reading glasses, sit back and let us take you through the 2nd of April. We arrived in the morning, said hi to our friends and teachers and were ready for the day',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/yourBrand.html',
 };
 
 const mustardSeed = {
@@ -31,7 +31,7 @@ const mustardSeed = {
     date: 'March 16, 2023',
     heading: 'Small As A Mustard Seed',
     intro: 'Hello there our beloved readers. We hope that you have been keeping well. We are so excited to start our new season where we will be learning about entrepreneurship and',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/mustardSeed.html',
 };
 
 const stockTake = {
@@ -39,7 +39,7 @@ const stockTake = {
     date: 'March 9, 2023',
     heading: 'Stock Take #1',
     intro: 'Hello there our Amazing readers and happy new month to you. We have finished our first series of goal settings and it is important to take stock of what we',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/stockTake.html',
 };
 
 const amConfident = {
@@ -47,7 +47,7 @@ const amConfident = {
     date: 'March 2, 2023',
     heading: 'I Am Confident',
     intro: 'Hello there our amazing readers!! It is always a pleasure to share with you what we learn at Amazing Kids Club. We have been focusing on setting goals and gradually',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/amConfident.html',
 };
 
 const amazingHabits = {
@@ -85,8 +85,8 @@ const letter2022 = {
 const decemberSpecialBasketball = {
     imgSrc: '../images/blog/december-special-basketball/decBasketball.jpg',
     date: 'December 15, 2022',
-    heading: 'December Special: Let\s Play basketball',
-    intro: 'Thank you for tuning back in for this week\’s read. Let us take you through the day. We started the day off with God like we always do. We prayed',
+    heading: 'December Special: Let\'s Play basketball',
+    intro: 'Thank you for tuning back in for this week\'s read. Let us take you through the day. We started the day off with God like we always do. We prayed',
     pageLink: './blog-pages/decemberSpecialBasketball.html',
 };
 
