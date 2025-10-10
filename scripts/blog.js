@@ -55,7 +55,7 @@ const amazingHabits = {
     date: 'February 24, 2023',
     heading: 'Amazing Habits',
     intro: 'Hello our dear readers!. We have missed you and hope that you are well. This week, after setting our goals and putting them down on paper, it was now time',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/amazingHabits.html',
 };
 
 const ourVision = {
@@ -63,7 +63,7 @@ const ourVision = {
     date: 'February 16, 2023',
     heading: 'Our Vision',
     intro: 'Hello, amazing readers. A wise man once said that if you aim for the moon, you might just hit the stars, and if you aim at nothing, you will hit nothing.',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/ourVision.html',
 };
 
 const goals2023 = {
@@ -71,7 +71,7 @@ const goals2023 = {
     date: 'February 9, 2023',
     heading: '2023 Goals!',
     intro: 'Happy New Year Everyone!!! It feels good to be back at our favorite creating center where learning is fun. This week our lesson was on goal setting. A goal is',
-    pageLink: './blog-pages/storyOfTabitha.html',
+    pageLink: './blog-pages/goals2023.html',
 };
 
 const letter2022 = {
