@@ -4,20 +4,69 @@ const sliderAdsContainer = document.getElementById('sliderAdsContainer');
 
 // data array of images to display in the slider container above
 const adsArray = [
-    './images/clubs/akc.jpg',
-    './images/clubs/spark.jpg',
-    // poster
+    { picUrl: './images/clubs/akc.jpg', buttonUrl: './pages/clubs.html#amazingKidsClub' },
+    { picUrl: './images/clubs/spark.jpg', buttonUrl: './pages/clubs.html#c5Spark' },
+    // poster with link to programs page
 ];
 
 // loop through adsArray, create necessary img & button elements and displaying the img in img tag
-adsArray.forEach(eachImgUrl => {
+adsArray.forEach(eachAd => {
+    // creating a container to hold image + button & adding a class to it
+    const oneAdContainer = document.createElement('div');
+    oneAdContainer.classList.add('adSlide');
+
     const imgTag = document.createElement('img');
-    imgTag.classList.add('imageAd');
-    imgTag.src = eachImgUrl;
+    const pageButton = document.createElement('button');
+    const webLink = document.createElement('a');
+
+    // adding image attributes
+    imgTag.src = eachAd.picUrl;
     imgTag.alt = 'Advertisement';
 
-    // add timeout to image
+    // adding button text and a link webpage link 
+    pageButton.textContent = 'See more';
+    webLink.href = eachAd.buttonUrl;
 
-    // adding the image to ads container
-    sliderAdsContainer.appendChild(imgTag);
+    // appending the button inside the a link for direction to new page
+    webLink.appendChild(pageButton);
+    // adding image + button with link to their container
+    oneAdContainer.appendChild(imgTag);
+    oneAdContainer.appendChild(webLink);
+
+    // adding the img + button container to parent container
+    sliderAdsContainer.appendChild(oneAdContainer);
 });
+
+let currentAdIndex = 0;
+// return all oneAdContainers with class adSlide
+const slides = document.querySelectorAll('.adSlide');
+
+// displaying one ad slide at a time
+function showSlide(index) {
+    // hiding all slides by turning display to none
+    slides.forEach(oneSlide => {
+        oneSlide.style.display = 'none';
+    });
+
+    // displaying only current slide
+    if (slides[index]) {
+        slides[index].style.display = 'flex';
+    }
+}
+
+// showing first slide
+showSlide(currentAdIndex);
+
+// changing slide after every 3 seconds
+setInterval(() => {
+    // moving to next ad index
+    currentAdIndex++;
+
+    // if passed the last slide index, loop to first index
+    if (currentAdIndex >= slides.length) {
+        currentAdIndex = 0;
+    }
+
+    // displaying current index slide
+    showSlide(currentAdIndex);
+}, 3000);
