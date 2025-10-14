@@ -1,0 +1,74 @@
+body {
+    padding: 0 5%;
+    margin: 0;
+}
+
+.boardOfDirectors {
+    margin-bottom: 30px;
+}
+
+.titles {
+    color: red;
+    font-size: 200%;
+}
+
+.eachPerson {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px grey solid;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#eachPersonImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#eachPersonDetails {
+    padding: 0 15px;
+}
+
+#eachPersonDetails .redRole {
+    background-color: red;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+}
+
+#eachPersonDetails span {
+    color: red;
+}
+
+.ruth {
+    background-image: url('../images/board-of-directors/ruth_main.jpg');
+}
+
+.joshua {
+    background-image: url('../images/board-of-directors/joshua_main.jpg');
+}
+
+.wachuka {
+    background-image: url('../images/board-of-directors/wachuka_main.jpg');
+}
+
+.harry {
+    background-image: url('../images/board-of-directors/harry_main.jpg');
+}
+
+.njambi {
+    background-image: url('../images/board-of-directors/njambi_main.jpeg');
+}
+
+.james {
+    background-image: url('../images/board-of-directors/james_main.png');
+}
+
+.hariet {
+    background-image: url('../images/board-of-directors/hariet_main.jpeg');
+}
