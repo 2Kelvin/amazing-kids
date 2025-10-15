@@ -25,6 +25,7 @@ adsArray.forEach(eachAd => {
 
     // adding button text and a link webpage link 
     pageButton.textContent = 'See more';
+    pageButton.classList.add('sliderBtn');
     webLink.href = eachAd.buttonUrl;
 
     // appending the button inside the a link for direction to new page
@@ -45,12 +46,12 @@ const slides = document.querySelectorAll('.adSlide');
 function showSlide(index) {
     // hiding all slides by turning display to none
     slides.forEach(oneSlide => {
-        oneSlide.style.display = 'none';
+        oneSlide.classList.remove('active');
     });
 
     // displaying only current slide
     if (slides[index]) {
-        slides[index].style.display = 'flex';
+        slides[index].classList.add('active');
     }
 }
 
@@ -69,4 +70,8 @@ setInterval(() => {
 
     // displaying current index slide
     showSlide(currentAdIndex);
-}, 3000);
+}, 4000);
+
+// adding date to footer
+const footerDate = document.getElementById('footerDate');
+footerDate.textContent = new Date().getFullYear();

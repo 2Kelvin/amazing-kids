@@ -22,41 +22,90 @@
 
     <section class="pageDetails">
         <!-- #1 Center of Choice -->
-        <h2 class="redText">#1 Center of Choice</h2>
-        <p>
-            Center of Creativity Services is a Christian and positive values based organization. We offer solutions that
-            enrich, empower and transform lives as they go through a life cycle.
-        </p>
-        <p>
-            Under the Center, we have <span>Amazing Kids Creative</span> which deals with the children, <span>C5 Spark
-                Teens
-                Connect</span> which deals with the teens and <span>Amazing Personalities</span> which deals with the
-            youth,
-            adults and seniors' programs.
-        </p>
-
-        <!-- Clubs (make aws cards on top of each other, akc; c5 & holiday) -->
-        <h2 class="redText">Clubs</h2>
-        <div>
-            <h3>Amazing Kids Club</h3>
+        <section>
+            <h2 class="redText">#1 CENTER OF CHOICE</h2>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, sint exercitationem est nulla harum
-                adipisci iste nobis, eos omnis, dolorem debitis unde amet incidunt in veniam. Explicabo doloribus odit
-                rerum.
+                Center of Creativity Services is a Christian and positive values based organization. We offer solutions
+                that enrich, empower and transform lives as they go through a life cycle.
             </p>
-        </div>
+            <p>
+                Under the Center, we have <b>Amazing Kids</b> which deals with the children, <b>C5 Spark Teens
+                    Connect</b> which deals with the teens and <b>Amazing Personalities</b> which
+                deals with the youth, adults and seniors' programs.
+            </p>
+        </section>
 
-        <!-- About Us -->
-        <h2 class="redText">About Us</h2>
-        <div>
+        <!-- CCS Clubs -->
+        <section id="ccsClubs">
+            <h2 class="redText">CLUBS</h2>
             <p>
                 We specialize in creating beautiful and original programs for kids, teenagers and young adults.
             </p>
-            <button>See the full team</button>
-        </div>
+            <div class="clubsContainer">
+                <!-- amazing kids club -->
+                <div class="oneClubCard akcCard">
+                    <a href="./pages/clubs.html#amazingKidsClub" target="_blank">
+                        <button class="arrowLinkBtn liquidGlass">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </button>
+                    </a>
+                    <div class="liquidGlass clubCardDetz">
+                        <h3>Amazing Kids Club</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis, labore, corporis
+                            esse ipsam, exercitationem non natus porro.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- c5 spark teens club -->
+                <div class="oneClubCard c5SparkTeensClub">
+                    <a href="./pages/clubs.html#c5Spark" target="_blank">
+                        <button class="arrowLinkBtn liquidGlass">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </button>
+                    </a>
+                    <div class="liquidGlass clubCardDetz">
+                        <h3>C5 Spark Teens Club</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis, labore, corporis
+                            esse ipsam, exercitationem non natus porro.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- holiday & special programs -->
+                <div class="oneClubCard holidayProg">
+                    <a href="./pages/clubs.html" target="_blank">
+                        <button class="arrowLinkBtn liquidGlass">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </button>
+                    </a>
+                    <div class="liquidGlass clubCardDetz">
+                        <h3>Holiday & Special Programs</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis, labore, corporis
+                            esse ipsam, exercitationem non natus porro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Feedback from happy clients -->
-        <h2 class="redText">Feedback</h2>
+        <h2 class="redText">FEEDBACK</h2>
         <div id="feedbackCardsContainer">
             <div class="feedbackCard ruthPendoCard">
                 </p><b>Ruth, Pendo's Mom</b></p>
@@ -190,25 +239,31 @@
                 <p><i>Charting a Unique Path Camp, 2023</i></p>
             </div>
         </div>
-
-        <!-- Contacts -->
-        <div>
-            <h2 class="redText">Contact Us</h2>
-            <p>AMAZING KIDS KENYA</p>
-            <p>
-                Delivering lasting impact within lives with every program. Our service offers a range of empowering
-                programs, perfect for every age group. Our satisfaction is to <i>Rescue tomorrow today</i>.
-            </p>
-            <p>Savelberg Retreat Centre Kilimani</p>
-            <p>creativityservices.ccs@gmail.com</p>
-            <p>0729713775</p>
-            <div class="contactIcons">
-                <img src="" alt="Facebook">
-                <img src="" alt="Instagram">
-                <img src="" alt="TikTok">
-            </div>
-        </div>
     </section>
+
+    <!-- Contacts -->
+    <footer id="contactUs">
+        <p><b>AMAZING KIDS KENYA</b></p>
+        <p>
+            Delivering lasting impact within lives with every program. Our service offers a range of empowering
+            programs, perfect for every age group. Our satisfaction is to <i>Rescue tomorrow today</i>.
+        </p>
+        <p>Savelberg Retreat Centre Kilimani</p>
+        <p>creativityservices.ccs@gmail.com</p>
+        <p>0729713775</p>
+        <div class="contactIcons">
+            <a href="">
+                <img src="./images/icons/fb_round.png" alt="Facebook" class="contactIcon">
+            </a>
+            <a href="">
+                <img src="./images/icons/ig_round.png" alt="Instagram" class="contactIcon">
+            </a>
+            <a href="">
+                <img src="./images/icons/tiktok_main.png" alt="TikTok" class="contactIcon">
+            </a>
+        </div>
+        <p id="footerDate"></p>
+    </footer>
 
     <!-- javascript -->
     <script src="index.js"></script>
