@@ -25,6 +25,10 @@ button {
     border: 0;
 }
 
+.redText {
+    color: red;
+}
+
 /* =================================== menu =================================== */
 menu {
     list-style: none;
@@ -75,4 +79,38 @@ menu li img {
 
 .pageDetails {
     padding: 0 20px;
+}
+
+/* =================================== feedback section =================================== */
+
+#feedbackCardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedbackCard {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+
+.ruthPendoCard {
+    background-color: #F9755B;
+    color: white;
+}
+
+.hannahCard {
+    background-color: #DB627D;
+    color: white;
+}
+
+.ruthSheilaCard {
+    color: white;
+    background-color: #9B3490;
+}
+
+.bellaCard {
+    color: white;
+    background-color: #8343D3;
 }
