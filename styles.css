@@ -50,7 +50,7 @@ menu li img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 2s ease-in-out, visibility 2s;
+    transition: opacity 3s ease-in-out, visibility 3s;
 
     flex-direction: column;
     align-items: center;

@@ -70,7 +70,7 @@ setInterval(() => {
 
     // displaying current index slide
     showSlide(currentAdIndex);
-}, 4000);
+}, 6000);
 
 // adding date to footer
 const footerDate = document.getElementById('footerDate');
