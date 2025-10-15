@@ -75,3 +75,14 @@ setInterval(() => {
 // adding date to footer
 const footerDate = document.getElementById('footerDate');
 footerDate.textContent = new Date().getFullYear();
+
+// transform menu icon
+const menuBarsContainer = document.getElementById('menuBarsContainer');
+
+function transformMenu(menuElement) {
+    menuElement.addEventListener('click', () => {
+        menuElement.classList.toggle('change');
+    });
+}
+
+transformMenu(menuBarsContainer);

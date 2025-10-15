@@ -12,9 +12,18 @@
 <body>
     <!-- akc logo and menu -->
     <menu>
-        <!-- <li><img src="" alt="Collapsed menu button"></li> -->
-        <li><img src="/images/ccs_logo.webp" alt="CCS logo"></li>
-        <li><button>Register</button></li>
+        <li>
+            <a href="#sliderAdsContainer">
+                <img src="/images/akc_logo.webp" alt="Amazing Kids logo">
+            </a>
+        </li>
+        <li>
+            <div id="menuBarsContainer">
+                <div class="menuBar1"></div>
+                <div class="menuBar2"></div>
+                <div class="menuBar3"></div>
+            </div>
+        </li>
     </menu>
 
     <!-- Image slider and advertisements -->
@@ -22,7 +31,7 @@
 
     <section class="pageDetails">
         <!-- #1 Center of Choice -->
-        <section>
+        <section id="centerOfChoice">
             <h2 class="redText">#1 CENTER OF CHOICE</h2>
             <p>
                 Center of Creativity Services is a Christian and positive values based organization. We offer solutions
@@ -105,140 +114,148 @@
         </section>
 
         <!-- Feedback from happy clients -->
-        <h2 class="redText">FEEDBACK</h2>
-        <div id="feedbackCardsContainer">
-            <div class="feedbackCard ruthPendoCard">
-                </p><b>Ruth, Pendo's Mom</b></p>
-                <p>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                </p>
-                <p>
-                    Learning about purpose at such an early age is such a great blessing. Thank you all teachers and
-                    facilitators. Pendo says she'll want to come for every holiday camp.
-                </p>
-                <p><i>Charting a Unique Path Camp, 2023</i></p>
-            </div>
+        <section id="feedbackSection">
+            <h2 class="redText">FEEDBACK</h2>
+            <div id="feedbackCardsContainer">
+                <div class="feedbackCard ruthPendoCard">
+                    </p><b>Ruth, Pendo's Mom</b></p>
+                    <p>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </p>
+                    <p>
+                        Learning about purpose at such an early age is such a great blessing. Thank you all teachers and
+                        facilitators. Pendo says she'll want to come for every holiday camp.
+                    </p>
+                    <p><i>Charting a Unique Path Camp, 2023</i></p>
+                </div>
 
-            <div class="feedbackCard hannahCard">
-                </p><b>Hannah, Kenzo's Mom</b></p>
-                <p>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                </p>
-                <p>
-                    My daughter was very happy with the experience! We can't wait for the next one. May God bless you
-                    for
-                    taking good care of them & keeping them off the screens.
-                </p>
-                <p><i>Charting a Unique Path Camp, 2023</i></p>
-            </div>
+                <div class="feedbackCard hannahCard">
+                    </p><b>Hannah, Kenzo's Mom</b></p>
+                    <p>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </p>
+                    <p>
+                        My daughter was very happy with the experience! We can't wait for the next one. May God bless
+                        you
+                        for
+                        taking good care of them & keeping them off the screens.
+                    </p>
+                    <p><i>Charting a Unique Path Camp, 2023</i></p>
+                </div>
 
-            <div class="feedbackCard ruthSheilaCard">
-                </p><b>Ruth, Sheila & Sheena's Mom</b></p>
-                <p>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                </p>
-                <p>
-                    I'm just listening to my girls as they share their experiences, they surely had a great time. Thank
-                    you
-                    all for the wonderful memories you've created in the children.
-                </p>
-                <p><i>Charting a Unique Path Camp, 2023</i></p>
-            </div>
+                <div class="feedbackCard ruthSheilaCard">
+                    </p><b>Ruth, Sheila & Sheena's Mom</b></p>
+                    <p>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </p>
+                    <p>
+                        I'm just listening to my girls as they share their experiences, they surely had a great time.
+                        Thank
+                        you
+                        all for the wonderful memories you've created in the children.
+                    </p>
+                    <p><i>Charting a Unique Path Camp, 2023</i></p>
+                </div>
 
-            <div class="feedbackCard bellaCard">
-                </p><b>Bella, Kenza & Jeremy's Mom</b></p>
-                <p>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
-                        <path
-                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                </p>
-                <p>
-                    It was the first time my boys have ever been away at a camp away. But they had such an amazing time.
-                    They had nothing but awesome stories to share. From the rooming with the their amazing teacher
-                    Elijah to
-                    the awesome food especially the chicken and chips. They learned valuable lessons on how to express
-                    themselves and said they are looking forward to coming back for the life skills camp. Thank you for
-                    being such a great team and looking after them so well. We hope we can be part of your group again
-                    next
-                    year. Be eternally blessed for your part in raising children for the kingdom of heaven.
-                </p>
-                <p><i>Charting a Unique Path Camp, 2023</i></p>
+                <div class="feedbackCard bellaCard">
+                    </p><b>Bella, Kenza & Jeremy's Mom</b></p>
+                    <p>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="yellow">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </p>
+                    <p>
+                        It was the first time my boys have ever been away at a camp away. But they had such an amazing
+                        time.
+                        They had nothing but awesome stories to share. From the rooming with the their amazing teacher
+                        Elijah to
+                        the awesome food especially the chicken and chips. They learned valuable lessons on how to
+                        express
+                        themselves and said they are looking forward to coming back for the life skills camp. Thank you
+                        for
+                        being such a great team and looking after them so well. We hope we can be part of your group
+                        again
+                        next
+                        year. Be eternally blessed for your part in raising children for the kingdom of heaven.
+                    </p>
+                    <p><i>Charting a Unique Path Camp, 2023</i></p>
+                </div>
             </div>
-        </div>
+        </section>
     </section>
 
     <!-- Contacts -->
