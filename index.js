@@ -79,10 +79,80 @@ footerDate.textContent = new Date().getFullYear();
 // transform menu icon
 const menuBarsContainer = document.getElementById('menuBarsContainer');
 
-function transformMenu(menuElement) {
+// function transformMenu(menuElement) {
+//     menuElement.addEventListener('click', () => {
+//         menuElement.classList.toggle('change');
+//     });
+// }
+
+// transformMenu(menuBarsContainer);
+
+function showTheNavBar(menuElement) {
+    // display mobile menu when menu is clicked
     menuElement.addEventListener('click', () => {
-        menuElement.classList.toggle('change');
+        // create pop up menu
+        const navigationPages = document.createElement('nav');
+
+        // also when menu button is clicked again or empty space outside menu is clicked close menu
+        if (!menuElement.classList.contains('navIsOpen')) {
+            // add classlist to display the nav in html
+            navigationPages.classList.add('navIsOpen');
+            menuElement.classList.add('change');
+            // create other pages links & append them to navigationPages
+            const programsClub = document.createElement('a');
+            programsClub.textContent = 'Programs';
+            programsClub.href = './pages/programs.html';
+            programsClub.classList.add('navPageLink');
+            programsClub.addEventListener('click', () => {
+                // when any page link is clicked, scroll to page and close menu
+                navigationPages.classList.remove('navIsOpen');
+            });
+            navigationPages.appendChild(programsClub);
+
+            const clubsNav = document.createElement('a');
+            clubsNav.textContent = 'Clubs';
+            clubsNav.href = './pages/clubs.html';
+            clubsNav.classList.add('navPageLink');
+            clubsNav.addEventListener('click', () => {
+                // when any page link is clicked, scroll to page and close menu
+                navigationPages.classList.remove('navIsOpen');
+            });
+            navigationPages.appendChild(clubsNav);
+
+            const blogNav = document.createElement('a');
+            blogNav.textContent = 'Blog';
+            blogNav.href = './pages/blog.html';
+            blogNav.classList.add('navPageLink');
+            blogNav.addEventListener('click', () => {
+                // when any page link is clicked, scroll to page and close menu
+                navigationPages.classList.remove('navIsOpen');
+            });
+            navigationPages.appendChild(blogNav);
+
+            const galleryNav = document.createElement('a');
+            galleryNav.textContent = 'Galery';
+            galleryNav.href = './pages/gallery.html';
+            galleryNav.classList.add('navPageLink');
+            galleryNav.addEventListener('click', () => {
+                // when any page link is clicked, scroll to page and close menu
+                navigationPages.classList.remove('navIsOpen');
+            });
+            navigationPages.appendChild(galleryNav);
+
+            const aboutUsNav = document.createElement('a');
+            aboutUsNav.textContent = 'About Us';
+            aboutUsNav.href = './pages/aboutUs.html';
+            aboutUsNav.classList.add('navPageLink');
+            aboutUsNav.addEventListener('click', () => {
+                // when any page link is clicked, scroll to page and close menu
+                navigationPages.classList.remove('navIsOpen');
+            });
+            navigationPages.appendChild(aboutUsNav);
+        } else {
+            menuElement.classList.remove('navIsOpen');
+            menuElement.classList.remove('change');
+        }
     });
 }
 
-transformMenu(menuBarsContainer);
+showTheNavBar(menuBarsContainer);
