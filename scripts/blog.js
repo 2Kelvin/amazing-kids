@@ -368,7 +368,6 @@ const blogData = [
 blogData.forEach(eachCardData => {
     // creating reusable blogCard elements
     const blogCard = document.createElement('div');
-    const blogCardImg = document.createElement('img');
     const blogCardDateClubDiv = document.createElement('div');
     const blogCardParaDate = document.createElement('p');
     const blogCardParaClub = document.createElement('p');
@@ -377,14 +376,14 @@ blogData.forEach(eachCardData => {
     const blogCardButton = document.createElement('button');
     const blogCardButtonSpan = document.createElement('span');
     const blogCardButtonLink = document.createElement('a');
+    const allTextContainer = document.createElement('div');
 
     // adding a class to blogCard
     blogCard.classList.add('blogCard');
+    allTextContainer.classList.add('liquidGlass');
+    allTextContainer.classList.add('allTextContainer');
 
-    // assigning img attributes data + appending to parent card div
-    blogCardImg.alt = 'Blog Picture';
-    blogCardImg.src = eachCardData.imgSrc;
-    blogCard.appendChild(blogCardImg);
+    blogCard.style.backgroundImage = `url(${eachCardData.imgSrc})`;
 
     // adding date and club content and appending to div (with an added class) + appending to parent card div
     blogCardDateClubDiv.classList.add('blogCardDateClubDiv');
@@ -393,16 +392,16 @@ blogData.forEach(eachCardData => {
     blogCardDateClubDiv.appendChild(blogCardParaClub);
     blogCardDateClubDiv.appendChild(blogCardParaDate);
     blogCardDateClubDiv.classList.add('blogCardDateClubDiv');
-    blogCard.appendChild(blogCardDateClubDiv);
+    allTextContainer.appendChild(blogCardDateClubDiv);
 
     // adding heading content + appending to parent card div
     blogCardH2.textContent = eachCardData.heading;
-    blogCard.appendChild(blogCardH2);
+    allTextContainer.appendChild(blogCardH2);
 
     // adding intro content + appending to parent card div
     // remove extra whitespaces at ends, slice to 147 letters and add ... at the end
     blogCardIntro.textContent = eachCardData.intro.trim().slice(0, 146).concat('...');
-    blogCard.appendChild(blogCardIntro);
+    allTextContainer.appendChild(blogCardIntro);
 
     // adding button content + appending to parent card div
     // also wrapping the button in a link to the blog page details post
@@ -412,7 +411,9 @@ blogData.forEach(eachCardData => {
     blogCardButtonLink.classList.add('blogCardButtonLink');
     blogCardButton.appendChild(blogCardButtonSpan);
     blogCardButtonLink.appendChild(blogCardButton);
-    blogCard.appendChild(blogCardButtonLink);
+    allTextContainer.appendChild(blogCardButtonLink);
+
+    blogCard.appendChild(allTextContainer);
 
     // finally adding this card to parent container
     blogContainer.appendChild(blogCard);
