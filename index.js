@@ -98,6 +98,8 @@ function createNavLinks(navElement) {
             // Close menu when link is clicked
             navigationPages.classList.remove('navIsOpen');
             menuBarsContainer.classList.remove('change');
+            document.body.classList.remove('noScroll');
+            document.documentElement.classList.remove('noScroll');
         });
         navElement.appendChild(link);
     });
@@ -111,6 +113,16 @@ function toggleTheNavBar(menuElement) {
     menuElement.addEventListener('click', () => {
         navigationPages.classList.toggle('navIsOpen');
         menuElement.classList.toggle('change');
+        
+        const body = document.body;
+        const html = document.documentElement;
+        if (navigationPages.classList.contains('navIsOpen')) {
+            body.classList.add('noScroll');
+            html.classList.add('noScroll');
+        } else {
+            body.classList.remove('noScroll');
+            html.classList.remove('noScroll');
+        }
     });
 }
 
