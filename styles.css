@@ -100,6 +100,11 @@ nav {
     font-size: 120%;
 }
 
+/* hiding full fledge menu on smaller screens */
+#biggerScreenMenu {
+    display: none;
+}
+
 /* =================================== image slider ads =================================== */
 #sliderAdsContainer {
     height: 70vh;
@@ -146,24 +151,36 @@ nav {
 }
 
 .sliderBtn {
-    background: red;
-    border-radius: 999px;
-    box-shadow: red 0 10px 20px -10px;
+    background-image: linear-gradient(92.88deg, #ff6161 9.16%, #ff3b3b 43.89%, red 64.72%);
+    border-radius: 10px;
+    border-style: none;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
+    flex-shrink: 0;
     font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    opacity: 1;
-    outline: 0 solid transparent;
-    padding: 8px 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    height: 3rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: fit-content;
-    word-break: break-word;
-    border: 0;
+    box-shadow: rgba(255, 0, 0, 0.5) 0 1px 30px;
+}
+
+.sliderBtn:hover {
+    background-color: white;
+    color: red;
+    background-image: none;
+}
+
+@media (min-width: 768px) {
+    .button-36 {
+        padding: 0 2.6rem;
+    }
 }
 
 /* =================================== pageDetails =================================== */
@@ -270,7 +287,7 @@ nav {
 
 /* =================================== contact us =================================== */
 #contactUs {
-    background-color: rgb(13, 13, 174);
+    background-color: #0d0dae;
     color: white;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -394,6 +411,44 @@ nav {
 /* For desktops and large screens */
 @media (min-width: 1024px) {
 
+    /* menu */
+    menu {
+        width: 95%;
+    }
+
+    /* hiding small screen menu */
+    menu li:last-of-type {
+        display: none;
+    }
+
+    /* displaying bigger screen menu */
+    #biggerScreenMenu {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        font-size: 110%;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    #biggerScreenMenu a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    #biggerScreenMenu a:visited {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    #biggerScreenMenu a:hover {
+        text-decoration: none;
+        color: red;
+        cursor: pointer;
+    }
+
     /* page details */
     .pageDetails {
         width: 80%;
@@ -412,11 +467,32 @@ nav {
 
     #contactUs .mottoFooter {
         width: 70%;
+        margin-bottom: 50px;
+    }
+
+    #contactUs .contactIcons {
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    #contactUs .contactIcon {
+        height: 60px;
+        width: 60px;
     }
 }
 
 /* xl screens */
 @media (min-width: 1366px) {
+
+    /* menu */
+    #biggerScreenMenu {
+        width: 550px;
+    }
+
+    menu li img {
+        height: 36px;
+        width: 150px;
+    }
 
     /* page details */
     .pageDetails {
