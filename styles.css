@@ -306,6 +306,7 @@ nav {
 #contactUs .mottoFooter {
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .akcNum {
@@ -316,12 +317,24 @@ nav {
 /* ########################################## MEDIA QUERIES ########################################## */
 
 /* For larger phones and smaller tablets */
-@media (min-width: 480px) {
-    /* all good here */
-}
+@media (min-width: 480px) {}
 
 /* For tablets and small laptops */
 @media (min-width: 768px) {
+
+    /* menu */
+    menu {
+        height: 60px;
+    }
+
+    menu li img {
+        height: 36px;
+        width: 140px;
+    }
+
+    nav {
+        top: 70px;
+    }
 
     /* clubs */
     #ccsClubs .c5SparkTeensClub {
@@ -375,9 +388,72 @@ nav {
 
     #contactUs .mottoFooter {
         width: 80%;
-        margin: 0 auto;
     }
 }
 
 /* For desktops and large screens */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+
+    /* page details */
+    .pageDetails {
+        width: 80%;
+        margin: auto;
+    }
+
+    #ccsClubs .clubsContainer {
+        gap: 20px;
+    }
+
+    /* contact */
+    #contactUs {
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+
+    #contactUs .mottoFooter {
+        width: 70%;
+    }
+}
+
+/* xl screens */
+@media (min-width: 1366px) {
+
+    /* page details */
+    .pageDetails {
+        width: 70%;
+    }
+
+    /* feedback */
+    #feedbackCardsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .ruthPendoCard {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .hannahCard {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+
+    .bellaCard {
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+    .ruthSheilaCard {
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+
+    /* contact */
+    #contactUs .mottoFooter {
+        width: 60%;
+    }
+}
