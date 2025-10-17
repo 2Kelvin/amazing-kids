@@ -26,13 +26,16 @@ adsArray.forEach(eachAd => {
     const imgTag = document.createElement('img');
     const pageButton = document.createElement('button');
     const webLink = document.createElement('a');
+    const span = document.createElement('span');
 
     // adding image attributes
     imgTag.src = eachAd.picUrl;
     imgTag.alt = 'Advertisement';
 
-    // adding button text and a link webpage link 
-    pageButton.textContent = eachAd.buttonTxt + ' \u2192';
+    // adding button text and a link webpage link
+    span.textContent = '\u2192'; 
+    pageButton.textContent = eachAd.buttonTxt;
+    pageButton.appendChild(span)
     pageButton.classList.add('sliderBtn');
     webLink.href = eachAd.buttonUrl;
 
