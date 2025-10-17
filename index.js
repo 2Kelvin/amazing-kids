@@ -76,83 +76,42 @@ setInterval(() => {
 const footerDate = document.getElementById('footerDate');
 footerDate.textContent = new Date().getFullYear();
 
-// transform menu icon
+// menu pop up
 const menuBarsContainer = document.getElementById('menuBarsContainer');
+const navigationPages = document.createElement('nav');
 
-// function transformMenu(menuElement) {
-//     menuElement.addEventListener('click', () => {
-//         menuElement.classList.toggle('change');
-//     });
-// }
+const pages = [
+    { text: 'Programs', url: './pages/programs.html' },
+    { text: 'Clubs', url: './pages/clubs.html' },
+    { text: 'Blog', url: './pages/blog.html' },
+    { text: 'Gallery', url: './pages/gallery.html' },
+    { text: 'About Us', url: './pages/aboutUs.html' },
+];
 
-// transformMenu(menuBarsContainer);
+function createNavLinks(navElement) {
+    pages.forEach(page => {
+        const link = document.createElement('a');
+        link.textContent = page.text;
+        link.href = page.url;
+        link.classList.add('navPageLink');
+        link.addEventListener('click', () => {
+            // Close menu when link is clicked
+            navigationPages.classList.remove('navIsOpen');
+            menuBarsContainer.classList.remove('change');
+        });
+        navElement.appendChild(link);
+    });
 
-function showTheNavBar(menuElement) {
-    // display mobile menu when menu is clicked
+    menuBarsContainer.appendChild(navElement);
+}
+
+createNavLinks(navigationPages);
+
+function toggleTheNavBar(menuElement) {
     menuElement.addEventListener('click', () => {
-        // create pop up menu
-        const navigationPages = document.createElement('nav');
-
-        // also when menu button is clicked again or empty space outside menu is clicked close menu
-        if (!menuElement.classList.contains('navIsOpen')) {
-            // add classlist to display the nav in html
-            navigationPages.classList.add('navIsOpen');
-            menuElement.classList.add('change');
-            // create other pages links & append them to navigationPages
-            const programsClub = document.createElement('a');
-            programsClub.textContent = 'Programs';
-            programsClub.href = './pages/programs.html';
-            programsClub.classList.add('navPageLink');
-            programsClub.addEventListener('click', () => {
-                // when any page link is clicked, scroll to page and close menu
-                navigationPages.classList.remove('navIsOpen');
-            });
-            navigationPages.appendChild(programsClub);
-
-            const clubsNav = document.createElement('a');
-            clubsNav.textContent = 'Clubs';
-            clubsNav.href = './pages/clubs.html';
-            clubsNav.classList.add('navPageLink');
-            clubsNav.addEventListener('click', () => {
-                // when any page link is clicked, scroll to page and close menu
-                navigationPages.classList.remove('navIsOpen');
-            });
-            navigationPages.appendChild(clubsNav);
-
-            const blogNav = document.createElement('a');
-            blogNav.textContent = 'Blog';
-            blogNav.href = './pages/blog.html';
-            blogNav.classList.add('navPageLink');
-            blogNav.addEventListener('click', () => {
-                // when any page link is clicked, scroll to page and close menu
-                navigationPages.classList.remove('navIsOpen');
-            });
-            navigationPages.appendChild(blogNav);
-
-            const galleryNav = document.createElement('a');
-            galleryNav.textContent = 'Galery';
-            galleryNav.href = './pages/gallery.html';
-            galleryNav.classList.add('navPageLink');
-            galleryNav.addEventListener('click', () => {
-                // when any page link is clicked, scroll to page and close menu
-                navigationPages.classList.remove('navIsOpen');
-            });
-            navigationPages.appendChild(galleryNav);
-
-            const aboutUsNav = document.createElement('a');
-            aboutUsNav.textContent = 'About Us';
-            aboutUsNav.href = './pages/aboutUs.html';
-            aboutUsNav.classList.add('navPageLink');
-            aboutUsNav.addEventListener('click', () => {
-                // when any page link is clicked, scroll to page and close menu
-                navigationPages.classList.remove('navIsOpen');
-            });
-            navigationPages.appendChild(aboutUsNav);
-        } else {
-            menuElement.classList.remove('navIsOpen');
-            menuElement.classList.remove('change');
-        }
+        navigationPages.classList.toggle('navIsOpen');
+        menuElement.classList.toggle('change');
     });
 }
 
-showTheNavBar(menuBarsContainer);
+toggleTheNavBar(menuBarsContainer);

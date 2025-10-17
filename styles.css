@@ -68,27 +68,37 @@ menu li img {
 
 nav {
     position: fixed;
-    top: 60px;
+    top: 52px;
     right: 0;
     width: 250px;
-    /* Slim size */
     height: calc(100vh - 60px);
-    /* Fill remaining viewport height */
-    background-color: #34495e;
+    background-color: rgb(13, 13, 174);
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
-    padding: 20px 0;
+    padding: 30px 0;
     box-sizing: border-box;
     z-index: 101;
-    /* Between content and header */
-
-    /* Initial state: pushed off-screen to the right by its own width */
     transform: translateX(100%);
-    /* Smooth transition for sliding effect */
     transition: transform 0.3s ease-in-out;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
 }
 
 .navIsOpen {
     transform: translateX(0);
+}
+
+.navPageLink {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.noScroll {
+    overflow: hidden;
 }
 
 /* =================================== image slider ads =================================== */
