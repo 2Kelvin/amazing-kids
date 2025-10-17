@@ -267,9 +267,15 @@ menu li img {
     font-weight: bold;
     margin-top: 30px;
     letter-spacing: 3px;
+    margin-bottom: 0;
 }
 
 #contactUs .contactIcon {
     height: 48px;
     width: 48px;
+}
+
+#contactUs .mottoFooter {
+    width: 85%;
+    margin: 0 auto;
 }
