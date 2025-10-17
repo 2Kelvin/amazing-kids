@@ -4,8 +4,16 @@ const sliderAdsContainer = document.getElementById('sliderAdsContainer');
 
 // data array of images to display in the slider container above
 const adsArray = [
-    { picUrl: './images/clubs/akc.jpg', buttonUrl: './pages/clubs.html#amazingKidsClub' },
-    { picUrl: './images/clubs/spark.jpg', buttonUrl: './pages/clubs.html#c5Spark' },
+    {
+        picUrl: './images/clubs/akc.jpg',
+        buttonUrl: './pages/clubs.html#amazingKidsClub',
+        buttonTxt: 'More on Amazing Kids Club'
+    },
+    {
+        picUrl: './images/clubs/spark.jpg',
+        buttonUrl: './pages/clubs.html#c5Spark',
+        buttonTxt: 'More on C5 Spark Teens Club'
+    },
     // poster with link to programs page
 ];
 
@@ -24,7 +32,7 @@ adsArray.forEach(eachAd => {
     imgTag.alt = 'Advertisement';
 
     // adding button text and a link webpage link 
-    pageButton.textContent = 'See more';
+    pageButton.textContent = eachAd.buttonTxt + ' \u2192';
     pageButton.classList.add('sliderBtn');
     webLink.href = eachAd.buttonUrl;
 
@@ -113,7 +121,7 @@ function toggleTheNavBar(menuElement) {
     menuElement.addEventListener('click', () => {
         navigationPages.classList.toggle('navIsOpen');
         menuElement.classList.toggle('change');
-        
+
         const body = document.body;
         const html = document.documentElement;
         if (navigationPages.classList.contains('navIsOpen')) {
