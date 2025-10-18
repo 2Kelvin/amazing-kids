@@ -37,9 +37,15 @@ menu {
     height: 42px;
 }
 
+menu li:first-of-type {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
 menu li img {
     height: 36px;
     width: 140px;
+    cursor: pointer;
 }
 
 #menuBarsContainer {
@@ -423,6 +429,10 @@ nav {
     /* menu */
     menu {
         width: 95%;
+    }
+
+    menu li:first-of-type {
+        margin: 10px 0 0 0;
     }
 
     /* hiding small screen menu */
