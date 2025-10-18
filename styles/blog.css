@@ -16,7 +16,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* logo & title */
+/* ############################## logo & title ############################## */
 
 .blogMenu {
     display: grid;
@@ -43,7 +43,7 @@ body {
     width: 100px;
 }
 
-/* blog cards */
+/* ############################## blog cards ############################## */
 
 #blogContainer {
     width: 90%;

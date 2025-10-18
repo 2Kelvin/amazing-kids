@@ -12,45 +12,89 @@ body {
     overflow: hidden;
 }
 
-:where(h1) {
-    margin-block: 0.67em;
-    font-size: 2em;
-}
+/* ############################## menu ############################## */
 
 .galleryMenu {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 40px;
     align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 99%;
 }
 
 .galleryMenu h1 {
     color: red;
+    font-size: 170%;
+}
+
+.galleryMenu div {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.galleryMenu a {
+    cursor: pointer;
 }
 
 .galleryMenu img {
-    height: 35px;
-    width: 35px;
+    height: 22px;
+    width: 100px;
 }
+
+/* ############################## container buttons + images ############################## */
+
+.galleryContainer {
+    margin: 10px auto 20px auto;
+    display: grid;
+    width: 95%;
+    gap: 30px;
+}
+
+/* ############################## buttons ############################## */
 
 #galleryButtonsDiv {
-    margin: 20px 0;
+    /* background-color: firebrick; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
-
 #galleryButtonsDiv button {
-    margin: 0 10px 10px 0;
+    background-image: linear-gradient(92.88deg, #ff6161 9.16%, #ff3b3b 43.89%, red 64.72%);
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    height: fit-content;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    padding: 0.5rem 0.7rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+#galleryButtonsDiv button.activeGalleryBtn {
+    font-weight: 500;
+    box-shadow: rgba(255, 0, 0, 0.5) 0 1px 30px;
+    background-color: white;
+    color: red;
+    background-image: none;
     cursor: pointer;
 }
 
-.activeGalleryBtn {
-    margin: 0 10px 10px 0;
-    cursor: pointer;
-    color: red;
-    border-color: red;
-}
+/* ############################## all pictures ############################## */
 
 #allPicturesContainer {
     display: grid;
-    /* Start with a 2-column grid for phones */
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
@@ -124,12 +168,28 @@ body {
     cursor: pointer;
 }
 
-/*
- * Media Queries for progressively enhancing the layout for larger screens
- */
+/* ########################################## Media Queries ##########################################*/
 
 /* For larger phones and smaller tablets */
 @media (min-width: 480px) {
+    .galleryMenu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galleryMenu div {
+        margin: 11px 0 0 0;
+    }
+
+    .galleryMenu img {
+        height: 32px;
+        width: 130px;
+    }
+
+    .galleryMenu h1 {
+        font-size: 200%;
+        margin-left: 10px;
+    }
+
     #allPicturesContainer {
         /* Change to 3 columns */
         grid-template-columns: repeat(3, 1fr);
@@ -139,6 +199,26 @@ body {
 
 /* For tablets and small laptops */
 @media (min-width: 768px) {
+    .galleryMenu {
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .galleryMenu div {
+        margin: 14px 0 0 0;
+    }
+
+    .galleryMenu img {
+        height: 40px;
+        width: 180px;
+    }
+
+    .galleryMenu h1 {
+        font-size: 250%;
+        margin-left: 40px;
+    }
+
     #allPicturesContainer {
         /* Change to 4 columns */
         grid-template-columns: repeat(4, 1fr);
@@ -147,9 +227,21 @@ body {
 
 /* For desktops and large screens */
 @media (min-width: 1024px) {
+    .galleryMenu div {
+        margin: 15px 0 0 0;
+    }
+
     #allPicturesContainer {
         /* Change to 6 columns */
         grid-template-columns: repeat(6, 1fr);
         gap: 20px;
+    }
+}
+
+/* xl screens */
+@media (min-width: 1366px) {
+    .galleryMenu h1 {
+        font-size: 250%;
+        margin-left: 100px;
     }
 }
