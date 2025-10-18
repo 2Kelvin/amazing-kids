@@ -18,27 +18,27 @@ body {
 
 /* logo & title */
 
-.galleryMenu {
+.blogMenu {
     display: grid;
     grid-template-columns: 1fr 1fr 40px;
     align-items: center;
 }
 
-.galleryMenu h1 {
+.blogMenu h1 {
     color: red;
     font-size: 170%;
 }
 
-.galleryMenu div {
+.blogMenu div {
     margin: 10px 0 0 0;
     padding: 0;
 }
 
-.galleryMenu a {
+.blogMenu a {
     cursor: pointer;
 }
 
-.galleryMenu img {
+.blogMenu img {
     height: 22px;
     width: 100px;
 }
@@ -129,20 +129,20 @@ body {
 
 /* For larger phones and smaller tablets */
 @media (min-width: 480px) {
-    .galleryMenu {
+    .blogMenu {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .galleryMenu div {
+    .blogMenu div {
         margin: 11px 0 0 0;
     }
 
-    .galleryMenu img {
+    .blogMenu img {
         height: 32px;
         width: 130px;
     }
 
-    .galleryMenu h1 {
+    .blogMenu h1 {
         font-size: 200%;
         margin-left: 10px;
     }
@@ -169,22 +169,22 @@ body {
 
 /* For tablets and small laptops */
 @media (min-width: 768px) {
-    .galleryMenu {
+    .blogMenu {
         grid-template-columns: repeat(3, 1fr);
         width: 90%;
         margin: 0 auto;
     }
 
-    .galleryMenu div {
+    .blogMenu div {
         margin: 14px 0 0 0;
     }
 
-    .galleryMenu img {
+    .blogMenu img {
         height: 40px;
         width: 180px;
     }
 
-    .galleryMenu h1 {
+    .blogMenu h1 {
         font-size: 250%;
         margin-left: 40px;
     }
@@ -207,7 +207,7 @@ body {
 
 /* For desktops and large screens */
 @media (min-width: 1024px) {
-    .galleryMenu div {
+    .blogMenu div {
         margin: 15px 0 0 0;
     }
 
@@ -226,7 +226,7 @@ body {
 
 /* xl screens */
 @media (min-width: 1366px) {
-    .galleryMenu h1 {
+    .blogMenu h1 {
         font-size: 250%;
         margin-left: 100px;
     }
