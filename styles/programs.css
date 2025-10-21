@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+/* ############################## menu ############################## */
+
+.programsMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 40px;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.programsMenu h1 {
+    color: red;
+    font-size: 170%;
+}
+
+.programsMenu div {
+    margin: 9px 0 0 0;
+    padding: 0;
+}
+
+.programsMenu a {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.programsMenu img {
+    height: 22px;
+    width: 100px;
+}
+
+#allPrograms {
+    /* background-color: greenyellow; */
+    width: 95%;
+    margin: auto;
+}
+
+.oneProgramCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+}
+
+.picDiv {
+    height: 550px;
+}
+
+.picDiv img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.oneProgramDetails {
+    background-color: hotpink;
+    height: 450px;
+    padding: 20px;
+    align-self: center;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* ########################################## Media Queries ##########################################*/
+
+/* For larger phones and smaller tablets */
+@media (min-width: 480px) {
+    .programsMenu {
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+    }
+
+    .programsMenu div {
+        margin: 11px 0 0 0;
+    }
+
+    .programsMenu img {
+        height: 32px;
+        width: 130px;
+    }
+
+    .programsMenu h1 {
+        font-size: 200%;
+        margin-left: 10px;
+    }
+}
+
+/* For tablets and small laptops */
+@media (min-width: 768px) {
+    .programsMenu {
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .programsMenu img {
+        height: 40px;
+        width: 180px;
+    }
+
+    .programsMenu h1 {
+        font-size: 250%;
+        margin-left: 40px;
+    }
+}
+
+/* For desktops and large screens */
+@media (min-width: 1024px) {
+    .programsMenu {
+        width: 85%;
+    }
+}
+
+/* xl screens */
+@media (min-width: 1366px) {
+    .programsMenu {
+        width: 80%;
+    }
+
+    .programsMenu h1 {
+        font-size: 250%;
+        margin-left: 100px;
+    }
+}
