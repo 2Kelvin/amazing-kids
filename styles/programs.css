@@ -242,6 +242,10 @@ body {
     }
 
     .oneProgramCard {
-        height: 500px;
+        height: 600px;
+    }
+
+    .oneProgramDetails {
+        height: 70%;
     }
 }
