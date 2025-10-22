@@ -99,7 +99,7 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .weOffer iframe {
@@ -139,6 +139,20 @@ h4 {
 .artBenefits li p,
 .dancingBenefits li p {
     margin-top: 0;
+}
+
+#c5Spark h3:first-of-type {
+    margin-top: 30px;
+}
+
+#c5Spark ol {
+    list-style-type: decimal-leading-zero;
+    padding: 0 0 0 20px; 
+    margin-bottom: 30px;
+}
+
+#c5Spark ol li {
+    font-weight: 500;
 }
 
 /* ########################################## Media Queries ##########################################*/
