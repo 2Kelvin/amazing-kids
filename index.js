@@ -38,9 +38,9 @@ adsArray.forEach(eachAd => {
     imgTag.alt = 'Advertisement';
 
     // adding button text and a link webpage link
-    span.textContent = '\u2192'; 
+    span.textContent = '\u2192';
     pageButton.textContent = eachAd.buttonTxt;
-    pageButton.appendChild(span)
+    pageButton.appendChild(span);
     pageButton.classList.add('sliderBtn');
     webLink.href = eachAd.buttonUrl;
 
@@ -143,3 +143,11 @@ function toggleTheNavBar(menuElement) {
 }
 
 toggleTheNavBar(menuBarsContainer);
+
+// remove whatsapp icon from page
+const cancelWhatsappBtn = document.getElementById('cancelWhatsapp');
+const floatingWhatsappDiv = document.getElementById('floatingWhatsappDiv');
+
+cancelWhatsappBtn.addEventListener('click', () => {
+    floatingWhatsappDiv.style.display = 'none';
+});
