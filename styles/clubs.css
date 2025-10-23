@@ -22,6 +22,7 @@ html.noScroll {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     object-fit: cover;
+    height: 50vh;
 }
 
 iframe {
@@ -368,10 +369,7 @@ nav {
         width: 80%;
         display: grid;
         margin: auto;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        height: 600px;
-        object-fit: cover;
+        height: 65vh;
     }
 
     .akcClubDetails,
