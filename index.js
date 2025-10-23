@@ -15,6 +15,11 @@ const adsArray = [
         buttonTxt: 'More on C5 Spark Teens Club'
     },
     // poster with link to programs page
+    {
+        picUrl: './images/program-posters/programs.png',
+        buttonUrl: './pages/programs.html',
+        buttonTxt: 'More on Our Programs'
+    },
 ];
 
 // loop through adsArray, create necessary img & button elements and displaying the img in img tag
