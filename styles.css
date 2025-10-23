@@ -289,6 +289,10 @@ nav {
     padding: 15px 20px;
 }
 
+.feedbackCard p:last-of-type {
+    font-weight: 300;
+}
+
 .ruthPendoCard {
     background-color: #F9755B;
     color: white;
