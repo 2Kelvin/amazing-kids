@@ -9,20 +9,21 @@ body {
     background-color: whitesmoke;
 }
 
+.noScroll,
+html.noScroll {
+    overflow: hidden;
+}
+
 /* ############################## menu ############################## */
 
 .programsMenu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 40px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0;
     margin: 0 auto;
     width: 95%;
-}
-
-.programsMenu h1 {
-    color: red;
-    font-size: 170%;
+    height: 80px;
 }
 
 .programsMenu div {
@@ -39,6 +40,86 @@ body {
 .programsMenu img {
     height: 22px;
     width: 100px;
+}
+
+/* nav */
+#menuBarsContainer {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+}
+
+#menuBarsContainer .menuBar3 {
+    margin: 0;
+}
+
+#menuBarsContainer .menuBar2 {
+    margin: 4px 0;
+}
+
+#menuBarsContainer .menuBar1 {
+    margin: 0;
+}
+
+.menuBar1,
+.menuBar2,
+.menuBar3 {
+    width: 25px;
+    height: 4px;
+    background-color: #333;
+    margin: 0;
+    transition: 0.4s;
+}
+
+.change .menuBar1 {
+    transform: translate(0, 9px) rotate(-46deg);
+}
+
+.change .menuBar2 {
+    opacity: 0;
+}
+
+.change .menuBar3 {
+    transform: translate(0, -7px) rotate(44deg);
+}
+
+nav {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: calc(100vh - 60px);
+    background-color: rgb(13, 13, 174);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    padding: 30px 0;
+    box-sizing: border-box;
+    z-index: 101;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.navIsOpen {
+    transform: translateX(0);
+}
+
+.navPageLink {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.navPageLink:hover {
+    color: red;
+}
+
+#biggerScreenMenu {
+    display: none;
 }
 
 /* all programs */
@@ -106,18 +187,16 @@ body {
 /* For larger phones and smaller tablets */
 @media (min-width: 480px) {
     .programsMenu {
-        grid-template-columns: repeat(3, 1fr);
         width: 90%;
+    }
+
+    .clubsMenu div {
+        margin: 11px 0 0 0;
     }
 
     .programsMenu img {
         height: 32px;
         width: 130px;
-    }
-
-    .programsMenu h1 {
-        font-size: 200%;
-        margin-left: 10px;
     }
 
     #allPrograms {
@@ -134,17 +213,12 @@ body {
 /* For tablets and small laptops */
 @media (min-width: 768px) {
     .programsMenu div {
-        margin: 11px 0 0 0;
+        margin: 14px 0 0 0;
     }
 
     .programsMenu img {
         height: 40px;
         width: 180px;
-    }
-
-    .programsMenu h1 {
-        font-size: 250%;
-        margin-left: 40px;
     }
 
     #allPrograms {
@@ -198,8 +272,42 @@ body {
 
 /* For desktops and large screens */
 @media (min-width: 1024px) {
-    .programsMenu {
-        width: 85%;
+
+    .programsMenu div {
+        margin: 15px 0 0 0;
+    }
+
+    /* hiding small screen menu */
+    #menuBarsContainer {
+        display: none;
+    }
+
+    /* displaying bigger screen menu */
+    #biggerScreenMenu {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        font-size: 110%;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    #biggerScreenMenu a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    #biggerScreenMenu a:visited {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    #biggerScreenMenu a:hover {
+        text-decoration: none;
+        color: red;
+        cursor: pointer;
     }
 
     #allPrograms {
@@ -223,14 +331,6 @@ body {
 
 /* xl screens */
 @media (min-width: 1366px) {
-    .programsMenu {
-        width: 80%;
-    }
-
-    .programsMenu h1 {
-        font-size: 250%;
-        margin-left: 100px;
-    }
 
     #allPrograms {
         gap: 40px;

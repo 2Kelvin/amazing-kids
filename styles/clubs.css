@@ -278,7 +278,7 @@ nav {
 
 /* For desktops and large screens */
 @media (min-width: 1024px) {
-    .blogMenu div {
+    .clubsMenu div {
         margin: 15px 0 0 0;
     }
 
@@ -358,9 +358,7 @@ nav {
 
 /* xl screens */
 @media (min-width: 1366px) {
-    .clubsMenu div {
-        margin: 15px 0 0 0;
-    }
+
 
     #biggerScreenMenu {
         width: 550px;
