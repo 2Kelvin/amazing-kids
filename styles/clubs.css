@@ -251,13 +251,13 @@ h4 {
         width: 80%;
     }
 
+    .clubsMenu div {
+        margin: 5px 0 0 0;
+    }
+
     .clubsMenu h1 {
         font-size: 250%;
         margin-left: 100px;
-    }
-
-    .clubsMenu {
-        width: 80%;
     }
 
     .clubsMenu h1 {
@@ -290,10 +290,6 @@ h4 {
 
     .weOffer iframe {
         height: 100%;
-    }
-
-    .weOffer ul {
-        font-size: 110%;
     }
 
     .sparkOffer {
