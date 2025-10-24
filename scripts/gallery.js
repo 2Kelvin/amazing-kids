@@ -10,6 +10,8 @@ const dinnerButton = document.getElementById('dinnerButton');
 const holidayButton = document.getElementById('holidayButton');
 const specialButton = document.getElementById('specialButton');
 const allImagesButton = document.getElementById('allButton');
+const testimonialsButton = document.getElementById('testimonialsButton');
+const connectCornerButton = document.getElementById('connectCornerButton');
 
 // all art images
 const allArtAndCraftImages = [
@@ -159,6 +161,8 @@ allImagesButton.addEventListener('click', () => {
     specialButton.classList.remove('activeGalleryBtn');
     dinnerButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
+    connectCornerButton.classList.remove('activeGalleryBtn');
+    testimonialsButton.classList.remove('activeGalleryBtn');
 
     for (let i = 0; i < allImages.length; i++) {
         const eachArrayOfImages = allImages[i];
@@ -205,6 +209,8 @@ artAndCraftButton.addEventListener('click', () => {
     dinnerButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
+    connectCornerButton.classList.remove('activeGalleryBtn');
+    testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
 
@@ -249,6 +255,8 @@ devotionButton.addEventListener('click', () => {
     dinnerButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
+    connectCornerButton.classList.remove('activeGalleryBtn');
+    testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
 
@@ -293,6 +301,8 @@ danceButton.addEventListener('click', () => {
     dinnerButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
+    connectCornerButton.classList.remove('activeGalleryBtn');
+    testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
 
@@ -337,6 +347,8 @@ dinnerButton.addEventListener('click', () => {
     specialButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
+    connectCornerButton.classList.remove('activeGalleryBtn');
+    testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
 
@@ -381,6 +393,8 @@ holidayButton.addEventListener('click', () => {
     dinnerButton.classList.remove('activeGalleryBtn');
     specialButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
+    connectCornerButton.classList.remove('activeGalleryBtn');
+    testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
 
@@ -425,6 +439,8 @@ specialButton.addEventListener('click', () => {
     dinnerButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
+    connectCornerButton.classList.remove('activeGalleryBtn');
+    testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
 
@@ -458,6 +474,98 @@ specialButton.addEventListener('click', () => {
             document.body.classList.remove('noScroll');
         }
     });
+});
+
+// displaying testimonials
+testimonialsButton.addEventListener('click', () => {
+    testimonialsButton.classList.add('activeGalleryBtn');
+    connectCornerButton.classList.remove('activeGalleryBtn');
+    specialButton.classList.remove('activeGalleryBtn');
+    artAndCraftButton.classList.remove('activeGalleryBtn');
+    danceButton.classList.remove('activeGalleryBtn');
+    devotionButton.classList.remove('activeGalleryBtn');
+    dinnerButton.classList.remove('activeGalleryBtn');
+    holidayButton.classList.remove('activeGalleryBtn');
+    allImagesButton.classList.remove('activeGalleryBtn');
+
+    allPicturesContainer.replaceChildren();
+
+    // allSpecialProgramsImages.forEach(pictureSrc => {
+    //     const eachPictureDiv = document.createElement('div');
+    //     const eachImgTag = document.createElement('img');
+
+    //     eachImgTag.src = pictureSrc;
+    //     eachImgTag.alt = 'Picture';
+
+    //     eachPictureDiv.classList.add('eachPictureDiv');
+    //     eachPictureDiv.appendChild(eachImgTag);
+
+    //     eachImgTag.addEventListener('click', () => {
+    //         fullScreenImage.src = pictureSrc;
+    //         popUpPage.style.display = 'flex';
+    //         document.body.classList.add('noScroll');
+    //     });
+
+    //     allPicturesContainer.appendChild(eachPictureDiv);
+    // });
+
+    // closeButton.addEventListener('click', () => {
+    //     popUpPage.style.display = 'none';
+    //     document.body.classList.remove('noScroll');
+    // });
+
+    // popUpPage.addEventListener('click', (event) => {
+    //     if (event.target === popUpPage) {
+    //         popUpPage.style.display = 'none';
+    //         document.body.classList.remove('noScroll');
+    //     }
+    // });
+});
+
+// displaying connect corner images / videos
+connectCornerButton.addEventListener('click', () => {
+    connectCornerButton.classList.add('activeGalleryBtn');
+    testimonialsButton.classList.remove('activeGalleryBtn');
+    specialButton.classList.remove('activeGalleryBtn');
+    artAndCraftButton.classList.remove('activeGalleryBtn');
+    danceButton.classList.remove('activeGalleryBtn');
+    devotionButton.classList.remove('activeGalleryBtn');
+    dinnerButton.classList.remove('activeGalleryBtn');
+    holidayButton.classList.remove('activeGalleryBtn');
+    allImagesButton.classList.remove('activeGalleryBtn');
+
+    allPicturesContainer.replaceChildren();
+
+    // allSpecialProgramsImages.forEach(pictureSrc => {
+    //     const eachPictureDiv = document.createElement('div');
+    //     const eachImgTag = document.createElement('img');
+
+    //     eachImgTag.src = pictureSrc;
+    //     eachImgTag.alt = 'Picture';
+
+    //     eachPictureDiv.classList.add('eachPictureDiv');
+    //     eachPictureDiv.appendChild(eachImgTag);
+
+    //     eachImgTag.addEventListener('click', () => {
+    //         fullScreenImage.src = pictureSrc;
+    //         popUpPage.style.display = 'flex';
+    //         document.body.classList.add('noScroll');
+    //     });
+
+    //     allPicturesContainer.appendChild(eachPictureDiv);
+    // });
+
+    // closeButton.addEventListener('click', () => {
+    //     popUpPage.style.display = 'none';
+    //     document.body.classList.remove('noScroll');
+    // });
+
+    // popUpPage.addEventListener('click', (event) => {
+    //     if (event.target === popUpPage) {
+    //         popUpPage.style.display = 'none';
+    //         document.body.classList.remove('noScroll');
+    //     }
+    // });
 });
 
 
