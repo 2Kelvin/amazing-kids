@@ -178,8 +178,36 @@ nav {
     font-size: 140%;
 }
 
-.oneProgramDetails .call {
+.oneProgramDetails button {
+    background-image: linear-gradient(92.88deg, #ff6161 9.16%, #ff3b3b 43.89%, red 64.72%);
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    height: fit-content;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: rgba(255, 0, 0, 0.5) 0 1px 10px;
+    padding: 0.5rem 0.7rem;
+    margin-top: 10px;
+}
+
+.oneProgramDetails button:hover {
+    background-color: white;
     color: red;
+    background-image: none;
+    cursor: pointer;
+}
+
+.oneProgramDetails button span {
+    margin-left: 10px;
 }
 
 #floatingWhatsappDiv {
@@ -235,7 +263,7 @@ nav {
     }
 
     #allPrograms {
-        width: 90%;
+        width: 80%;
         padding-top: 10px;
     }
 
@@ -257,7 +285,7 @@ nav {
     }
 
     #allPrograms {
-        padding-top: 15px;
+        padding-top: 30px;
     }
 
     .oneProgramCard {
@@ -348,12 +376,13 @@ nav {
     #allPrograms {
         gap: 20px;
         grid-template-columns: repeat(2, 1fr);
-        padding-top: 20px;
+        padding-top: 50px;
+        width: 90%;
     }
 
     .oneProgramCard {
         grid-template-columns: 1fr 35%;
-        height: 600px;
+        height: 500px;
     }
 
     .oneProgramDetails {
@@ -375,10 +404,11 @@ nav {
     #allPrograms {
         gap: 40px;
         padding-top: 35px;
+        width: 80%;
     }
 
     .oneProgramCard {
-        height: 600px;
+        height: 550px;
     }
 
     .oneProgramDetails {
