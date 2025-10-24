@@ -363,7 +363,7 @@ nav {
 /* xl screens */
 @media (min-width: 1366px) {
 
-    .programsMenu img {
+    .aboutUsMenu img {
         height: 52px;
         width: 56px;
     }
