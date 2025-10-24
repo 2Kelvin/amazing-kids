@@ -43,8 +43,8 @@ menu li:first-of-type {
 }
 
 menu li img {
-    height: 36px;
-    width: 140px;
+    height: 40px;
+    width: 44px;
     cursor: pointer;
 }
 
@@ -415,8 +415,8 @@ nav {
     }
 
     menu li img {
-        height: 40px;
-        width: 170px;
+        height: 48px;
+        width: 52px;
     }
 
     nav {
@@ -561,9 +561,9 @@ nav {
 @media (min-width: 1366px) {
 
     /* menu */
-    menu li img {
-        height: 40px;
-        width: 180px;
+   menu li img {
+        height: 52px;
+        width: 56px;
     }
 
     #biggerScreenMenu {

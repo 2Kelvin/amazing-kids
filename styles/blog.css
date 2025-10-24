@@ -43,8 +43,8 @@ html.noScroll {
 }
 
 .blogMenu img {
-    height: 22px;
-    width: 100px;
+    height: 40px;
+    width: 44px;
 }
 
 /* nav */
@@ -221,11 +221,6 @@ nav {
         margin: 11px 0 0 0;
     }
 
-    .blogMenu img {
-        height: 32px;
-        width: 130px;
-    }
-
     #blogContainer {
         gap: 25px;
         width: 85%;
@@ -254,8 +249,8 @@ nav {
     }
 
     .blogMenu img {
-        height: 40px;
-        width: 180px;
+        height: 48px;
+        width: 52px;
     }
 
     #blogContainer {
@@ -328,6 +323,12 @@ nav {
 
 /* xl screens */
 @media (min-width: 1366px) {
+
+    .blogMenu img {
+        height: 52px;
+        width: 56px;
+    }
+
     #biggerScreenMenu {
         width: 550px;
     }
