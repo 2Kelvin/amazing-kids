@@ -85,7 +85,7 @@ menu li img {
 }
 
 .change .menuBar3 {
-    transform: translate(0, -11px) rotate(44deg);
+    transform: translate(0, -7px) rotate(44deg);
 }
 
 nav {
@@ -121,6 +121,30 @@ nav {
 
 .navPageLink:hover {
     color: red;
+}
+
+.registerButton {
+    background-image: linear-gradient(92.88deg, #ff6161 9.16%, #ff3b3b 43.89%, red 64.72%);
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: fit-content;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: rgba(255, 0, 0, 0.5) 0 1px 5px;
+    padding: 0.5rem 0.7rem;
+}
+
+.registerButton:hover {
+    background-color: white;
+    color: red;
+    background-image: none;
+    cursor: pointer;
 }
 
 /* hiding full fledge menu on smaller screens */
@@ -501,10 +525,11 @@ nav {
     #biggerScreenMenu {
         display: flex;
         justify-content: space-between;
-        width: 450px;
+        width: 500px;
         font-size: 110%;
         font-weight: 600;
         text-decoration: none;
+        align-items: center;
     }
 
     #biggerScreenMenu a {
@@ -522,6 +547,17 @@ nav {
     #biggerScreenMenu a:hover {
         text-decoration: none;
         color: red;
+        cursor: pointer;
+    }
+
+    #biggerScreenMenu a.registerButton {
+        color: white;
+    }
+
+    #biggerScreenMenu a.registerButton:hover {
+        background-color: white;
+        color: red;
+        background-image: none;
         cursor: pointer;
     }
 
@@ -561,13 +597,13 @@ nav {
 @media (min-width: 1366px) {
 
     /* menu */
-   menu li img {
+    menu li img {
         height: 52px;
         width: 56px;
     }
 
     #biggerScreenMenu {
-        width: 550px;
+        width: 650px;
     }
 
     /* page details */
