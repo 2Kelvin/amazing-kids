@@ -382,12 +382,12 @@ nav {
 
     .oneProgramCard {
         grid-template-columns: 1fr 35%;
-        height: 500px;
+        height: 600px;
     }
 
     .oneProgramDetails {
         width: auto;
-        height: 75%;
+        height: 90%;
         padding: 10px;
         font-size: 90%;
     }
@@ -412,6 +412,6 @@ nav {
     }
 
     .oneProgramDetails {
-        height: 70%;
+        height: 80%;
     }
 }
