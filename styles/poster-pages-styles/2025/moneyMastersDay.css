@@ -6,9 +6,7 @@ body {
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
-    background-color: whitesmoke;
-    width: 90%;
-    margin: auto;
+    padding-bottom: 10px;
 }
 
 .noScroll,
@@ -17,7 +15,7 @@ html.noScroll {
 }
 
 /* menu */
-.programsMenu {
+.theMenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,18 +25,18 @@ html.noScroll {
     height: 80px;
 }
 
-.programsMenu div {
+.theMenu div {
     margin: 9px 0 0 0;
     padding: 0;
 }
 
-.programsMenu a {
+.theMenu a {
     cursor: pointer;
     padding: 0;
     margin: 0;
 }
 
-.programsMenu img {
+.theMenu img {
     height: 40px;
     width: 44px;
 }
@@ -125,6 +123,11 @@ nav {
 
 /* poster details */
 
+.allThePosterDetails {
+    width: 90%;
+    margin: auto;
+}
+
 h1,
 h3 {
     color: red;
@@ -145,4 +148,95 @@ h1 {
 
 .centerText {
     text-align: center;
+}
+
+/* ########################################## Media Queries ##########################################*/
+
+/* For larger phones and smaller tablets */
+@media (min-width: 480px) {
+    .theMenu {
+        width: 90%;
+    }
+
+    .theMenu div {
+        margin: 11px 0 0 0;
+    }
+
+    .allThePosterDetails {
+        width: 80%;
+    }
+}
+
+/* For tablets and small laptops */
+@media (min-width: 768px) {
+    .theMenu div {
+        margin: 14px 0 0 0;
+    }
+
+    .theMenu img {
+        height: 48px;
+        width: 52px;
+    }
+
+    .allThePosterDetails {
+        width: 70%;
+    }
+}
+
+/* For desktops and large screens */
+@media (min-width: 1024px) {
+
+    .theMenu div {
+        margin: 15px 0 0 0;
+    }
+
+    /* hiding small screen menu */
+    #menuBarsContainer {
+        display: none;
+    }
+
+    /* displaying bigger screen menu */
+    #biggerScreenMenu {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        font-size: 110%;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    #biggerScreenMenu a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    #biggerScreenMenu a:visited {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    #biggerScreenMenu a:hover {
+        text-decoration: none;
+        color: red;
+        cursor: pointer;
+    }
+
+    .allThePosterDetails {
+        width: 60%;
+    }
+}
+
+/* xl screens */
+@media (min-width: 1366px) {
+
+    .theMenu img {
+        height: 52px;
+        width: 56px;
+    }
+
+    .allThePosterDetails {
+        width: 50%;
+    }
 }
