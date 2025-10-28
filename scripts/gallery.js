@@ -95,6 +95,11 @@ const allTripAndAdventureImages = [
     '../images/gallery/trip-and-adventure/trip10.jpg',
 ];
 
+// all testimonials youtube links
+const allTestimonialVids = [
+    'https://www.youtube.com/embed/jyU7dTUnHeU?si=cRnekMbJ2SxdFDut'
+];
+
 // array of all images
 const allImages = [
     allArtAndCraftImages,
@@ -490,36 +495,24 @@ testimonialsButton.addEventListener('click', () => {
 
     allPicturesContainer.replaceChildren();
 
-    // allSpecialProgramsImages.forEach(pictureSrc => {
-    //     const eachPictureDiv = document.createElement('div');
-    //     const eachImgTag = document.createElement('img');
+    allTestimonialVids.forEach(vidLink => {
+        const eachPictureDiv = document.createElement('div');
+        const eachIframe = document.createElement('iframe');
 
-    //     eachImgTag.src = pictureSrc;
-    //     eachImgTag.alt = 'Picture';
+        eachIframe.src = vidLink;
+        eachIframe.title = 'YouTube video player';
+        eachIframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        eachIframe.frameborder = '0';
+        eachIframe.referrerPolicy = 'strict-origin-when-cross-origin'
+        eachIframe.allowFullscreen = true
 
-    //     eachPictureDiv.classList.add('eachPictureDiv');
-    //     eachPictureDiv.appendChild(eachImgTag);
+        eachPictureDiv.classList.add('eachPictureDiv');
+        eachPictureDiv.appendChild(eachIframe);
 
-    //     eachImgTag.addEventListener('click', () => {
-    //         fullScreenImage.src = pictureSrc;
-    //         popUpPage.style.display = 'flex';
-    //         document.body.classList.add('noScroll');
-    //     });
+        allPicturesContainer.appendChild(eachPictureDiv);
+    });
 
-    //     allPicturesContainer.appendChild(eachPictureDiv);
-    // });
-
-    // closeButton.addEventListener('click', () => {
-    //     popUpPage.style.display = 'none';
-    //     document.body.classList.remove('noScroll');
-    // });
-
-    // popUpPage.addEventListener('click', (event) => {
-    //     if (event.target === popUpPage) {
-    //         popUpPage.style.display = 'none';
-    //         document.body.classList.remove('noScroll');
-    //     }
-    // });
+    // <iframe width="560" height="315"  allowfullscreen></iframe>;
 });
 
 // displaying connect corner images / videos
