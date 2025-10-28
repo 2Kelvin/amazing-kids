@@ -97,7 +97,7 @@ const allTripAndAdventureImages = [
 
 // all testimonials youtube links
 const allTestimonialVids = [
-    'https://www.youtube.com/embed/jyU7dTUnHeU?si=cRnekMbJ2SxdFDut'
+    'https://www.youtube.com/embed/jyU7dTUnHeU?si=cRnekMbJ2SxdFDut&rel=0'
 ];
 
 // array of all images
@@ -501,9 +501,9 @@ testimonialsButton.addEventListener('click', () => {
 
         eachIframe.src = vidLink;
         eachIframe.title = 'YouTube video player';
-        eachIframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        // eachIframe.allow = '';
         eachIframe.frameborder = '0';
-        eachIframe.referrerPolicy = 'strict-origin-when-cross-origin'
+        // eachIframe.referrerPolicy = 'strict-origin-when-cross-origin'
         eachIframe.allowFullscreen = true
 
         eachPictureDiv.classList.add('eachPictureDiv');
