@@ -501,10 +501,10 @@ testimonialsButton.addEventListener('click', () => {
 
         eachIframe.src = vidLink;
         eachIframe.title = 'YouTube video player';
-        // eachIframe.allow = '';
+        eachIframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
         eachIframe.frameborder = '0';
-        // eachIframe.referrerPolicy = 'strict-origin-when-cross-origin'
-        eachIframe.allowFullscreen = true
+        eachIframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        eachIframe.allowFullscreen = true;
 
         eachPictureDiv.classList.add('eachPictureDiv');
         eachPictureDiv.appendChild(eachIframe);
