@@ -1,7 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    padding-bottom: 10px;
 }
+
+.noScroll,
+html.noScroll {
+    overflow: hidden;
+}
+
+/* menu */
+.theMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 95%;
+    height: 80px;
+}
+
+.theMenu div {
+    margin: 9px 0 0 0;
+    padding: 0;
+}
+
+.theMenu a {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.theMenu img {
+    height: 40px;
+    width: 44px;
+}
+
+/* nav */
+#menuBarsContainer {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+}
+
+#menuBarsContainer .menuBar3 {
+    margin: 0;
+}
+
+#menuBarsContainer .menuBar2 {
+    margin: 4px 0;
+}
+
+#menuBarsContainer .menuBar1 {
+    margin: 0;
+}
+
+.menuBar1,
+.menuBar2,
+.menuBar3 {
+    width: 25px;
+    height: 4px;
+    background-color: #333;
+    margin: 0;
+    transition: 0.4s;
+}
+
+.change .menuBar1 {
+    transform: translate(0, 9px) rotate(-46deg);
+}
+
+.change .menuBar2 {
+    opacity: 0;
+}
+
+.change .menuBar3 {
+    transform: translate(0, -7px) rotate(44deg);
+}
+
+nav {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: calc(100vh - 60px);
+    background-color: rgb(13, 13, 174);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    padding: 30px 0;
+    box-sizing: border-box;
+    z-index: 101;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.navIsOpen {
+    transform: translateX(0);
+}
+
+.navPageLink {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.navPageLink:hover {
+    color: red;
+}
+
+#biggerScreenMenu {
+    display: none;
+}
+
+/* title and bg */
 
 .bgTitleBlog {
     background-image: url('../../images/blog/creating-business-logo/creatingBizLogo.png');
@@ -14,10 +134,11 @@ body {
     align-items: end;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    margin-bottom: 20px;
 }
 
 .bgTitleBlog div {
-    background-color: rgba(0, 255, 255, 0.4);
+    background-color: rgba(0, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     text-align: center;
     margin: 10px;
@@ -48,4 +169,112 @@ iframe {
     width: 100%;
     height: 315px;
     border-radius: 20px;
+}
+
+/* ########################################## Media Queries ##########################################*/
+
+/* For larger phones and smaller tablets */
+@media (min-width: 480px) {
+    .theMenu {
+        width: 90%;
+    }
+
+    .theMenu div {
+        margin: 11px 0 0 0;
+    }
+
+    .bgTitleBlog {
+        height: 50vh;
+    }
+
+    .blogDetailsContainer {
+        width: 80%;
+    }
+}
+
+/* For tablets and small laptops */
+@media (min-width: 768px) {
+    .theMenu div {
+        margin: 14px 0 0 0;
+    }
+
+    .theMenu img {
+        height: 48px;
+        width: 52px;
+    }
+
+    .bgTitleBlog {
+        height: 60vh;
+    }
+
+    .blogDetailsContainer {
+        width: 70%;
+    }
+}
+
+/* For desktops and large screens */
+@media (min-width: 1024px) {
+
+    .theMenu div {
+        margin: 15px 0 0 0;
+    }
+
+    /* hiding small screen menu */
+    #menuBarsContainer {
+        display: none;
+    }
+
+    /* displaying bigger screen menu */
+    #biggerScreenMenu {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        font-size: 110%;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    #biggerScreenMenu a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    #biggerScreenMenu a:visited {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    #biggerScreenMenu a:hover {
+        text-decoration: none;
+        color: red;
+        cursor: pointer;
+    }
+
+    .bgTitleBlog {
+        height: 70vh;
+        margin-bottom: 30px;
+    }
+
+    .blogDetailsContainer {
+        width: 60%;
+    }
+}
+
+/* xl screens */
+@media (min-width: 1366px) {
+
+    .theMenu img {
+        height: 52px;
+        width: 56px;
+    }
+
+    .bgTitleBlog {
+        height: 75vh;
+    }
+
+    .blogDetailsContainer {
+        width: 50%;
+    }
 }
