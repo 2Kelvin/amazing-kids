@@ -114,6 +114,7 @@ function createNavLinks(navElement) {
         link.classList.add('navPageLink');
         // styling the register button differently
         if (page.text == 'Register') {
+            link.classList.remove('navPageLink');
             link.classList.add('registerButton');
         }
         link.addEventListener('click', () => {

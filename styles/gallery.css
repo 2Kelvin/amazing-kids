@@ -109,13 +109,14 @@ nav {
 }
 
 .navPageLink {
-    color: white;
+    color: yellow;
     text-decoration: none;
     font-size: 120%;
+    font-weight: 500;
 }
 
 .navPageLink:hover {
-    color: red;
+    color: white;
 }
 
 #biggerScreenMenu {
@@ -142,14 +143,16 @@ nav {
 }
 
 #galleryButtonsDiv button {
-    background-image: linear-gradient(92.88deg, #ff6161 9.16%, #ff3b3b 43.89%, red 64.72%);
+    background-image: linear-gradient(92.88deg, #6278f3 9.16%, #3d59fc 43.89%, #0026ff 64.72%);
+    box-shadow: rgba(0, 0, 255, 0.5) 0 1px 5px;
     border-radius: 10px;
     border-style: none;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: yellow;
     cursor: pointer;
     flex-shrink: 0;
     font-family: "Poppins", sans-serif;
+    font-weight: 500;
     height: fit-content;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
@@ -157,16 +160,12 @@ nav {
     -webkit-user-select: none;
     touch-action: manipulation;
     padding: 0.5rem 0.7rem;
-    margin-top: 10px;
-    font-weight: 300;
 }
 
 #galleryButtonsDiv button.activeGalleryBtn {
-    font-weight: 500;
-    box-shadow: rgba(255, 0, 0, 0.5) 0 1px 30px;
-    background-color: white;
-    color: red;
-    background-image: none;
+    background-image: linear-gradient(92.88deg, rgb(245, 245, 153) 9.16%, rgb(249, 249, 43) 43.89%, yellow 64.72%);
+    box-shadow: rgba(0, 0, 255, 0.5) 0 1px 10px;
+    color: #0026ff;
     cursor: pointer;
 }
 
@@ -192,7 +191,7 @@ nav {
 }
 
 .eachPictureDiv:hover {
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .eachPictureDiv img,
@@ -326,20 +325,20 @@ nav {
     }
 
     #biggerScreenMenu a {
+        color: #0026ff;
         text-decoration: none;
-        color: inherit;
         cursor: pointer;
     }
 
     #biggerScreenMenu a:visited {
+        color: #0026ff;
         text-decoration: none;
-        color: inherit;
         cursor: pointer;
     }
 
     #biggerScreenMenu a:hover {
         text-decoration: none;
-        color: red;
+        color: rgba(0, 38, 255, 0.4);
         cursor: pointer;
     }
 

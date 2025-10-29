@@ -13,8 +13,8 @@ html.noScroll {
     overflow: hidden;
 }
 
-.redText {
-    color: red;
+.blueText {
+    color: #0026ff;
 }
 
 .clubImages {
@@ -131,13 +131,14 @@ nav {
 }
 
 .navPageLink {
-    color: white;
+    color: yellow;
     text-decoration: none;
     font-size: 120%;
+    font-weight: 500;
 }
 
 .navPageLink:hover {
-    color: red;
+    color: white;
 }
 
 #biggerScreenMenu {
@@ -174,7 +175,7 @@ nav {
     border-radius: 50%;
     border: 2px solid transparent;
     background: linear-gradient(white, white) padding-box,
-        linear-gradient(to top, #ff0000, #0000ff) border-box;
+        linear-gradient(to bottom, yellow, #0026ff) border-box;
 }
 
 .weOffer {
@@ -334,20 +335,20 @@ nav {
     }
 
     #biggerScreenMenu a {
+        color: #0026ff;
         text-decoration: none;
-        color: inherit;
         cursor: pointer;
     }
 
     #biggerScreenMenu a:visited {
+        color: #0026ff;
         text-decoration: none;
-        color: inherit;
         cursor: pointer;
     }
 
     #biggerScreenMenu a:hover {
         text-decoration: none;
-        color: red;
+        color: rgba(0, 38, 255, 0.4);
         cursor: pointer;
     }
 

@@ -6,7 +6,7 @@ body {
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     padding-bottom: 20px;
 }
 
@@ -110,13 +110,14 @@ nav {
 }
 
 .navPageLink {
-    color: white;
+    color: yellow;
     text-decoration: none;
     font-size: 120%;
+    font-weight: 500;
 }
 
 .navPageLink:hover {
-    color: red;
+    color: white;
 }
 
 #biggerScreenMenu {
@@ -134,7 +135,7 @@ nav {
 }
 
 .titles {
-    color: red;
+    /* color: rgba(0, 38, 255, 0.6); */
     text-align: center;
     font-size: 120%;
     margin-bottom: 120px;
@@ -176,7 +177,7 @@ nav {
     padding: 2px;
     border: 2px solid transparent;
     background: linear-gradient(white, white) padding-box,
-        linear-gradient(to top, #ff0000, #0000ff) border-box;
+        linear-gradient(to top, yellow, #0026ff) border-box;
 }
 
 .profileCard h3 {
@@ -192,11 +193,11 @@ nav {
 }
 
 .profileCard .role {
-    background-image: linear-gradient(92.88deg, #ff6161 9.16%, #ff3b3b 43.89%, red 64.72%);
+    background-image: linear-gradient(92.88deg, #6278f3 9.16%, #3d59fc 43.89%, #0026ff 64.72%);
     border-radius: 10px;
     border-style: none;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: yellow;
     flex-shrink: 0;
     font-family: "Poppins", sans-serif;
     height: fit-content;
@@ -280,20 +281,20 @@ nav {
     }
 
     #biggerScreenMenu a {
+        color: #0026ff;
         text-decoration: none;
-        color: inherit;
         cursor: pointer;
     }
 
     #biggerScreenMenu a:visited {
+        color: #0026ff;
         text-decoration: none;
-        color: inherit;
         cursor: pointer;
     }
 
     #biggerScreenMenu a:hover {
         text-decoration: none;
-        color: red;
+        color: rgba(0, 38, 255, 0.4);
         cursor: pointer;
     }
 
