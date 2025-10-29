@@ -243,6 +243,14 @@ nav {
     text-align: center;
 }
 
+.ccsValues {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align-last: left;
+    font-weight: 600;
+    list-style-type: square;
+}
+
 #ccsClubs {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -432,7 +440,12 @@ nav {
 /* ########################################## MEDIA QUERIES ########################################## */
 
 /* For larger phones and smaller tablets */
-@media (min-width: 480px) {}
+@media (min-width: 480px) {
+    .ccsValues {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 
 /* For tablets and small laptops */
 @media (min-width: 768px) {
@@ -455,6 +468,11 @@ nav {
     .sliderBtn {
         height: 3rem;
         padding: 0 1.6rem;
+    }
+
+    .ccsValues {
+        width: 50%;
+        margin: 0 auto;
     }
 
     /* clubs */
@@ -541,7 +559,7 @@ nav {
         color: #0026ff;
         cursor: pointer;
     }
-    
+
     #biggerScreenMenu a:visited {
         text-decoration: none;
         color: #0026ff;
@@ -574,6 +592,11 @@ nav {
     .pageDetails {
         width: 80%;
         margin: auto;
+    }
+
+    .ccsValues {
+        width: 40%;
+        margin: 0 auto;
     }
 
     #ccsClubs .clubsContainer {
@@ -618,6 +641,11 @@ nav {
     /* page details */
     .pageDetails {
         width: 70%;
+    }
+
+    .ccsValues {
+        width: 35%;
+        margin: 0 auto;
     }
 
     /* feedback */
