@@ -108,13 +108,14 @@ nav {
 }
 
 .navPageLink {
-    color: white;
+    color: yellow;
     text-decoration: none;
     font-size: 120%;
+    font-weight: 500;
 }
 
 .navPageLink:hover {
-    color: red;
+    color: whitered;
 }
 
 #biggerScreenMenu {
@@ -235,20 +236,20 @@ iframe {
     }
 
     #biggerScreenMenu a {
+        color: #0026ff;
         text-decoration: none;
-        color: inherit;
         cursor: pointer;
     }
 
     #biggerScreenMenu a:visited {
+        color: #0026ff;
         text-decoration: none;
-        color: inherit;
         cursor: pointer;
     }
 
     #biggerScreenMenu a:hover {
         text-decoration: none;
-        color: red;
+        color: rgba(0, 38, 255, 0.4);
         cursor: pointer;
     }
 
