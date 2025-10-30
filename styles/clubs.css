@@ -233,6 +233,11 @@ nav {
     list-style-type: square;
 }
 
+.sparkObjs li::marker {
+    color: #0026ff;
+    font-size: 120%;
+}
+
 #c5Spark ol {
     list-style-type: decimal-leading-zero;
     padding: 0 0 0 20px;
@@ -314,6 +319,11 @@ nav {
     .clubsMenu img {
         height: 48px;
         width: 52px;
+    }
+
+    .sparkObjs li::marker {
+        color: #0026ff;
+        font-size: 180%;
     }
 }
 
