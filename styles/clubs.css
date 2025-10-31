@@ -172,12 +172,12 @@ nav {
 .akcObjective .number {
     display: grid;
     place-content: center;
-    height: 30px;
-    width: 30px;
+    height: 22px;
+    width: 22px;
     border-radius: 50%;
     border: 2px solid transparent;
     background: linear-gradient(white, white) padding-box,
-        linear-gradient(to bottom, yellow, #0026ff) border-box;
+        linear-gradient(to top, yellow, #0026ff) border-box;
 }
 
 .weOffer {
