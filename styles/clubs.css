@@ -13,7 +13,8 @@ html.noScroll {
     overflow: hidden;
 }
 
-.blueText {
+.blueText,
+#holidayPrograms h3 {
     color: #0026ff;
 }
 
@@ -148,7 +149,8 @@ nav {
 /* ########################################## All Clubs ##########################################*/
 
 .akcClubDetails,
-.c5SparkClubDetails {
+.c5SparkClubDetails,
+.holidayProgramDetails {
     width: 90%;
     margin: 0 auto;
 }
@@ -229,11 +231,13 @@ nav {
     margin-top: 30px;
 }
 
-.sparkObjs {
+.sparkObjs,
+.holidayProgramDetails ul {
     list-style-type: square;
 }
 
-.sparkObjs li::marker {
+.sparkObjs li::marker,
+.holidayProgramDetails li::marker {
     color: #0026ff;
     font-size: 120%;
 }
@@ -250,6 +254,11 @@ nav {
 
 .membDiv {
     text-align: center;
+}
+
+#holidayPrograms {
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 #floatingWhatsappDiv {
@@ -305,7 +314,8 @@ nav {
     }
 
     .akcClubDetails,
-    .c5SparkClubDetails {
+    .c5SparkClubDetails,
+    .holidayProgramDetails {
         width: 85%;
     }
 }
@@ -321,7 +331,8 @@ nav {
         width: 52px;
     }
 
-    .sparkObjs li::marker {
+    .sparkObjs li::marker,
+    .holidayProgramDetails li::marker {
         color: #0026ff;
         font-size: 180%;
     }
@@ -367,7 +378,8 @@ nav {
     }
 
     .akcClubDetails,
-    .c5SparkClubDetails {
+    .c5SparkClubDetails,
+    .holidayProgramDetails {
         width: 80%;
     }
 
@@ -404,6 +416,16 @@ nav {
     h3 {
         margin-bottom: 30px;
     }
+
+    #holidayPrograms {
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    #holidayPrograms h3{
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
 }
 
 /* xl screens */
@@ -426,7 +448,8 @@ nav {
     }
 
     .akcClubDetails,
-    .c5SparkClubDetails {
+    .c5SparkClubDetails,
+    .holidayProgramDetails {
         width: 60%;
     }
 
