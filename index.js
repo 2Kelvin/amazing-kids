@@ -27,14 +27,15 @@ adsArray.forEach(eachAd => {
     const oneAdContainer = document.createElement('div');
     oneAdContainer.classList.add('adSlide');
 
-    const imgTag = document.createElement('img');
+    // const imgTag = document.createElement('img');
     const pageButton = document.createElement('button');
     const webLink = document.createElement('a');
     const span = document.createElement('span');
 
     // adding image attributes
-    imgTag.src = eachAd.picUrl;
-    imgTag.alt = 'Advertisement';
+    // imgTag.src = eachAd.picUrl;
+    // imgTag.alt = 'Advertisement';
+    oneAdContainer.style.backgroundImage = `url(${eachAd.picUrl})`
 
     // adding button text and a link webpage link
     span.textContent = '\u2192';
@@ -46,7 +47,7 @@ adsArray.forEach(eachAd => {
     // appending the button inside the a link for direction to new page
     webLink.appendChild(pageButton);
     // adding image + button with link to their container
-    oneAdContainer.appendChild(imgTag);
+    // oneAdContainer.appendChild(imgTag);
     oneAdContainer.appendChild(webLink);
 
     // adding the img + button container to parent container

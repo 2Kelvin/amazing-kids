@@ -179,6 +179,10 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* for each background-image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .adSlide.active {
@@ -187,11 +191,11 @@ nav {
     pointer-events: auto;
 }
 
-.adSlide img {
+/* .adSlide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 .adSlide a {
     position: absolute;
