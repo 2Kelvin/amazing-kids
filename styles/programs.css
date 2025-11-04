@@ -181,7 +181,7 @@ nav {
 
 .oneProgramDetails button {
     background-image: linear-gradient(92.88deg, #6278f3 9.16%, #3d59fc 43.89%, #0026ff 64.72%);
-    box-shadow: rgba(0, 0, 255, 0.5) 0 1px 30px;
+    box-shadow: rgba(0, 0, 255, 0.5) 0 1px 10px;
     border-radius: 10px;
     border-style: none;
     box-sizing: border-box;
@@ -201,7 +201,7 @@ nav {
 
 .oneProgramDetails button:hover {
     background-image: linear-gradient(92.88deg, rgb(245, 245, 153) 9.16%, rgb(249, 249, 43) 43.89%, yellow 64.72%);
-    box-shadow: rgba(0, 0, 255, 0.5) 0 1px 30px;
+    box-shadow: rgba(0, 0, 255, 0.5) 0 1px 10px;
     color: #0026ff;
     cursor: pointer;
 }
