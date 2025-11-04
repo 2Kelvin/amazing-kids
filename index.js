@@ -5,18 +5,17 @@ const sliderAdsContainer = document.getElementById('sliderAdsContainer');
 // data array of images to display in the slider container above
 const adsArray = [
     {
-        picUrl: 'https://creativityserviceskenya.com/images/clubs/akc.jpg',
+        picUrl: './images/clubs/akc.jpg',
         buttonUrl: './pages/clubs.html#amazingKidsClub',
         buttonTxt: 'More on Amazing Kids Club'
     },
     {
-        picUrl: 'https://creativityserviceskenya.com/images/clubs/spark.jpg',
+        picUrl: './images/clubs/spark.jpg',
         buttonUrl: './pages/clubs.html#c5Spark',
         buttonTxt: 'More on C5 Spark Teens Club'
     },
-    // poster with link to programs page
     {
-        picUrl: 'https://creativityserviceskenya.com/images/program-posters/programs.png',
+        picUrl: './images/program-posters/programs.png',
         buttonUrl: './pages/programs.html',
         buttonTxt: 'More on Our Programs'
     },
@@ -103,7 +102,7 @@ const pages = [
     { text: 'Gallery', url: './pages/gallery.html' },
     { text: 'About Us', url: './pages/aboutUs.html' },
     // replace this with link to google form
-    { text: 'Register', url: 'https://forms.gle/XYtTcEmFm5EFzE3R9'},
+    { text: 'Register', url: 'https://forms.gle/XYtTcEmFm5EFzE3R9' },
 ];
 
 function createNavLinks(navElement) {
@@ -116,7 +115,7 @@ function createNavLinks(navElement) {
         if (page.text == 'Register') {
             link.classList.remove('navPageLink');
             link.classList.add('registerButton');
-            link.target = '_blank'
+            link.target = '_blank';
         }
         link.addEventListener('click', () => {
             // Close menu when link is clicked
