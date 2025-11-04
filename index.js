@@ -103,7 +103,7 @@ const pages = [
     { text: 'Gallery', url: './pages/gallery.html' },
     { text: 'About Us', url: './pages/aboutUs.html' },
     // replace this with link to google form
-    { text: 'Register', url: './pages/aboutUs.html' },
+    { text: 'Register', url: '' },
 ];
 
 function createNavLinks(navElement) {
