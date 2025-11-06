@@ -1,1 +1,1 @@
-Amazing Kids Website
+Center of Creativity Services Website

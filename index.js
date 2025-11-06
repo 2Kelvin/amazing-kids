@@ -116,7 +116,7 @@ function createNavLinks(navElement) {
         if (page.text == 'Register') {
             link.classList.remove('navPageLink');
             link.classList.add('registerButton');
-            link.target = '_blank';
+            // link.target = '_blank';
         }
         link.addEventListener('click', () => {
             // Close menu when link is clicked
