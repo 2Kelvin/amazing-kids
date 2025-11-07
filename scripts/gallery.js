@@ -80,6 +80,9 @@ const allHolidayProgramsImages = [
     '../images/gallery/holiday-programs/h1.jpg',
     '../images/gallery/holiday-programs/h2.jpg',
     '../images/gallery/holiday-programs/h3.jpg',
+    '../images/clubs/sparkHeader.jpg',
+    '../images/clubs/specialPrograms.jpg',
+    '../images/clubs/sparkKids.jpg',
 ];
 
 // all special programs images
