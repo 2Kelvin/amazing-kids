@@ -97,7 +97,25 @@ const allTripAndAdventureImages = [
 
 // all testimonials youtube links
 const allTestimonialVids = [
-    'https://www.youtube.com/embed/jyU7dTUnHeU?si=cRnekMbJ2SxdFDut&rel=0'
+    'https://www.youtube.com/embed/jyU7dTUnHeU?si=cRnekMbJ2SxdFDut&rel=0',
+    'https://www.youtube.com/embed/xUOa-M-uQsg?si=X5NU8T9KsqWwZz4u&rel=0',
+    'https://www.youtube.com/embed/U8bWR121S70?si=yANUiF5MJanjc4m4&rel=0',
+    'https://www.youtube.com/embed/f_RllJY1laE?si=Kfqnb6-6UZz8bs9t&rel=0',
+    'https://www.youtube.com/embed/O0AJS-Yb-4A?si=nB4eUCxcy0Vw7cCU&rel=0',
+    'https://www.youtube.com/embed/x-weOQIZs68?si=ahPGNQc0I26jbRea&rel=0',
+    'https://www.youtube.com/embed/hm0ADfOmgGM?si=tYpI1GPKrBayBhTY&rel=0',
+    'https://www.youtube.com/embed/9_03bZeKD-Y?si=RIIfAwpRNSYvm3ci&rel=0',
+    'https://www.youtube.com/embed/i04djCjCBHM?si=KI6ujT7mc_IZNiGG&rel=0',
+    'https://www.youtube.com/embed/b__ykS0YovY?si=9f437PpCukLo4VZv&rel=0',
+    'https://www.youtube.com/embed/YHZa_0SDTZ0?si=ImB27pijlGWsT9X-&rel=0',
+    'https://www.youtube.com/embed/_5Fq3Dmkky8?si=ugmccdrmYJDon7ra&rel=0',
+    'https://www.youtube.com/embed/60EXMFdJrnM?si=dh2HU9A15L-yGOr0&rel=0',
+    'https://www.youtube.com/embed/t8YxY6oWCDw?si=JviSkZtSuhURpnd7&rel=0',
+    'https://www.youtube.com/embed/sHwGxX2VfaA?si=kNj22AbYnmQASqdR&rel=0',
+    'https://www.youtube.com/embed/pdVqirWwUrs?si=kQoX1fbXZJavp_d5&rel=0',
+    'https://www.youtube.com/embed/o-t17cgMq4A?si=mcfU9HTawf_ZWK1c&rel=0',
+    'https://www.youtube.com/embed/N5S8TRMqWOo?si=NM0P9ZDgCDuA7qMD&rel=0',
+    'https://www.youtube.com/embed/60yGItnoKV4?si=0rAOc06svToto-M7&rel=0',
 ];
 
 // array of all images
