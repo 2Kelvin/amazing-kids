@@ -130,6 +130,13 @@ nav {
     padding-bottom: 10px;
 }
 
+.programImg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 h1,
 h3 {
     color: #0026ff;
@@ -196,6 +203,10 @@ h1 {
         width: 80%;
     }
 
+    .programImg {
+        height: 310px;
+    }
+
     .otherProgPostersDiv a {
         width: 100%;
         height: 600px;
@@ -217,6 +228,10 @@ h1 {
     .allThePosterDetails {
         width: 70%;
         padding-bottom: 20px;
+    }
+
+    .programImg {
+        height: 390px;
     }
 
     .allThePosterDetails {
@@ -278,6 +293,10 @@ h1 {
 
     .allThePosterDetails {
         width: 60%;
+    }
+
+    .programImg {
+        height: 450px;
     }
 
     .otherProgPostersDiv {

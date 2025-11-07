@@ -261,6 +261,13 @@ nav {
     margin-bottom: 20px;
 }
 
+.holidayProgramImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 #floatingWhatsappDiv {
     position: fixed;
     width: auto;
@@ -336,6 +343,10 @@ nav {
         color: #0026ff;
         font-size: 180%;
     }
+
+    .holidayProgramImage {
+        height: 450px;
+    }
 }
 
 /* For desktops and large screens */
@@ -375,6 +386,14 @@ nav {
         text-decoration: none;
         color: rgba(0, 38, 255, 0.4);
         cursor: pointer;
+    }
+
+    .clubImages {
+        height: 75vh;
+    }
+
+    .holidayProgramImage {
+        height: 550px;
     }
 
     .akcClubDetails,
@@ -444,7 +463,7 @@ nav {
         width: 80%;
         display: grid;
         margin: auto;
-        height: 65vh;
+        height: 80vh;
     }
 
     .akcClubDetails,

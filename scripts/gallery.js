@@ -21,6 +21,16 @@ const allArtAndCraftImages = [
     '../images/gallery/art-and-craft/art4.jpg',
     '../images/gallery/art-and-craft/art5.jpg',
     '../images/gallery/art-and-craft/art6.jpg',
+    '../images/gallery/art-and-craft/art7.jpg',
+    '../images/gallery/art-and-craft/art8.jpg',
+    '../images/gallery/art-and-craft/art9.jpg',
+    '../images/gallery/art-and-craft/art10.jpg',
+    '../images/gallery/art-and-craft/art11.jpg',
+    '../images/gallery/art-and-craft/art12.jpg',
+    '../images/gallery/art-and-craft/art13.jpg',
+    '../images/gallery/art-and-craft/art14.jpg',
+    '../images/gallery/art-and-craft/art15.jpg',
+    '../images/gallery/art-and-craft/art16.jpg',
 ];
 
 // all board of directors images
@@ -119,14 +129,15 @@ const allTestimonialVids = [
 ];
 
 // array of all images
+// reversing each in order to display the more recent ones first
 const allImages = [
-    allArtAndCraftImages,
-    allDanceImages,
-    allDevotionImages,
-    allDinnerImages,
-    allHolidayProgramsImages,
-    allSpecialProgramsImages,
-    allTripAndAdventureImages,
+    allArtAndCraftImages.reverse(),
+    allDanceImages.reverse(),
+    allDevotionImages.reverse(),
+    allDinnerImages.reverse(),
+    allHolidayProgramsImages.reverse(),
+    allSpecialProgramsImages.reverse(),
+    allTripAndAdventureImages.reverse(),
 ];
 
 // looping through all arrays of images

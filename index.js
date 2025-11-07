@@ -5,14 +5,14 @@ const sliderAdsContainer = document.getElementById('sliderAdsContainer');
 // data array of images to display in the slider container above
 const adsArray = [
     {
+        picUrl: './images/clubs/sparkHeader.jpg',
+        buttonUrl: './pages/clubs.html#c5Spark',
+        buttonTxt: 'More on C5 Spark Teens Club'
+    },
+    {
         picUrl: './images/clubs/akc.jpg',
         buttonUrl: './pages/clubs.html#amazingKidsClub',
         buttonTxt: 'More on Amazing Kids Club'
-    },
-    {
-        picUrl: './images/clubs/spark.jpg',
-        buttonUrl: './pages/clubs.html#c5Spark',
-        buttonTxt: 'More on C5 Spark Teens Club'
     },
     {
         picUrl: './images/program-posters/programs.png',
@@ -35,7 +35,7 @@ adsArray.forEach(eachAd => {
     // adding image attributes
     // imgTag.src = eachAd.picUrl;
     // imgTag.alt = 'Advertisement';
-    oneAdContainer.style.backgroundImage = `url(${eachAd.picUrl})`
+    oneAdContainer.style.backgroundImage = `url(${eachAd.picUrl})`;
 
     // adding button text and a link webpage link
     span.textContent = '\u2192';

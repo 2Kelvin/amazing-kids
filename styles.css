@@ -261,17 +261,17 @@ nav {
 }
 
 #ccsClubs .akcCard {
-    background-image: url('./images/clubs/akcKid.jpg');
+    background-image: url('./images/gallery/art-and-craft/art12.jpg');
 }
 
 #ccsClubs .c5SparkTeensClub {
-    background-image: url('./images/clubs/sparkKids.jpg');
+    background-image: url('./images/gallery/art-and-craft/art7.jpg');
     /* space between cards in column mode */
     margin: 20px 0;
 }
 
 #ccsClubs .holidayProg {
-    background-image: url('./images/gallery/holiday-programs/h1.jpg');
+    background-image: url('./images/clubs/specialPrograms.jpg');
 }
 
 #ccsClubs .oneClubCard {
@@ -590,6 +590,11 @@ nav {
         background-image: none;
         cursor: pointer;
         box-shadow: rgba(0, 0, 255, 0.5) 0 1px 10px;
+    }
+
+    #sliderAdsContainer {
+        height: 81vh;
+        margin-bottom: 40px;
     }
 
     /* page details */
