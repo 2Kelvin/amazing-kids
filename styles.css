@@ -270,6 +270,8 @@ nav .registerButton {
 
 #ccsClubs .personalitiesCard {
     background-image: url('./images/clubs/amazingPersonalities2.jpg');
+    /* space between cards in column mode */
+    margin: 20px 0;
 }
 
 #ccsClubs .oneClubCard {
@@ -482,9 +484,13 @@ nav .registerButton {
         margin: 0;
     }
 
+    #ccsClubs .personalitiesCard {
+        margin: 0;
+    }
+
     #ccsClubs .clubsContainer {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
     }
 
@@ -606,10 +612,6 @@ nav .registerButton {
         margin: 0 auto;
     }
 
-    #ccsClubs .clubsContainer {
-        gap: 20px;
-    }
-
     /* contact */
     #contactUs {
         border-top-left-radius: 60px;
@@ -648,6 +650,10 @@ nav .registerButton {
     /* page details */
     .pageDetails {
         width: 70%;
+    }
+
+    #ccsClubs .clubsContainer {
+        gap: 20px;
     }
 
     .ccsValues {
