@@ -102,7 +102,6 @@ const pages = [
     { text: 'Blog', url: './pages/blog.html' },
     { text: 'Gallery', url: './pages/gallery.html' },
     { text: 'About Us', url: './pages/aboutUs.html' },
-    // replace this with link to google form
     { text: 'Register', url: 'https://forms.gle/XYtTcEmFm5EFzE3R9' },
 ];
 
@@ -116,7 +115,6 @@ function createNavLinks(navElement) {
         if (page.text == 'Register') {
             link.classList.remove('navPageLink');
             link.classList.add('registerButton');
-            // link.target = '_blank';
         }
         link.addEventListener('click', () => {
             // Close menu when link is clicked

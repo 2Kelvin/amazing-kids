@@ -210,6 +210,13 @@ nav {
     margin-left: 10px;
 }
 
+.oneProgramDetails button:disabled {
+    background-image: linear-gradient(92.88deg, grey 9.16%, grey 43.89%, grey 64.72%);
+    color: rgba(245, 245, 245, 0.3);
+    box-shadow: grey 0 1px 10px;
+    cursor: default;
+}
+
 #floatingWhatsappDiv {
     position: fixed;
     width: auto;

@@ -8,6 +8,7 @@ const pages = [
     { text: 'Blog', url: './../../../pages/blog.html' },
     { text: 'Gallery', url: './../../../pages/gallery.html' },
     { text: 'About Us', url: './../../../pages/aboutUs.html' },
+    { text: 'Register', url: 'https://forms.gle/XYtTcEmFm5EFzE3R9' },
 ];
 
 function createNavLinks(navElement) {
@@ -16,6 +17,11 @@ function createNavLinks(navElement) {
         link.textContent = page.text;
         link.href = page.url;
         link.classList.add('navPageLink');
+        // styling the register button differently
+        if (page.text == 'Register') {
+            link.classList.remove('navPageLink');
+            link.classList.add('registerButton');
+        }
         link.addEventListener('click', () => {
             // Close menu when link is clicked
             navigationPages.classList.remove('navIsOpen');
