@@ -167,7 +167,6 @@ a.registerButton:hover {
 h1,
 h3 {
     color: #0026ff;
-    text-align: center;
 }
 
 h3 {
@@ -175,6 +174,7 @@ h3 {
 }
 
 h1 {
+    text-align: center;
     margin-bottom: 0;
 }
 
