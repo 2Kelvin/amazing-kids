@@ -11,7 +11,7 @@ const holidayButton = document.getElementById('holidayButton');
 const specialButton = document.getElementById('specialButton');
 const allImagesButton = document.getElementById('allButton');
 const testimonialsButton = document.getElementById('testimonialsButton');
-const connectCornerButton = document.getElementById('connectCornerButton');
+const vijanaAjabuButton = document.getElementById('vijanaAjabuButton');
 
 // all art images
 const allArtAndCraftImages = [
@@ -108,6 +108,16 @@ const allTripAndAdventureImages = [
     '../images/gallery/trip-and-adventure/trip10.jpg',
 ];
 
+// all vijana ajabu images
+const allVijanaAjabuImages = [
+    '../images/gallery/vijana-ajabu/vijanaAjabu.jpg',
+    '../images/gallery/vijana-ajabu/vijanaAjabu1.jpg',
+    '../images/gallery/vijana-ajabu/vijanaAjabu2.jpg',
+    '../images/gallery/vijana-ajabu/vijanaAjabu3.jpg',
+    '../images/gallery/vijana-ajabu/vijanaAjabu4.jpg',
+    '../images/gallery/vijana-ajabu/vijanaAjabu5.jpg',
+];
+
 // all testimonials youtube links
 const allTestimonialVids = [
     'https://www.youtube.com/embed/jyU7dTUnHeU?si=cRnekMbJ2SxdFDut&rel=0',
@@ -198,7 +208,7 @@ allImagesButton.addEventListener('click', () => {
     specialButton.classList.remove('activeGalleryBtn');
     dinnerButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
-    connectCornerButton.classList.remove('activeGalleryBtn');
+    vijanaAjabuButton.classList.remove('activeGalleryBtn');
     testimonialsButton.classList.remove('activeGalleryBtn');
 
     for (let i = 0; i < allImages.length; i++) {
@@ -246,7 +256,7 @@ artAndCraftButton.addEventListener('click', () => {
     dinnerButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
-    connectCornerButton.classList.remove('activeGalleryBtn');
+    vijanaAjabuButton.classList.remove('activeGalleryBtn');
     testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
@@ -292,7 +302,7 @@ devotionButton.addEventListener('click', () => {
     dinnerButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
-    connectCornerButton.classList.remove('activeGalleryBtn');
+    vijanaAjabuButton.classList.remove('activeGalleryBtn');
     testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
@@ -338,7 +348,7 @@ danceButton.addEventListener('click', () => {
     dinnerButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
-    connectCornerButton.classList.remove('activeGalleryBtn');
+    vijanaAjabuButton.classList.remove('activeGalleryBtn');
     testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
@@ -384,7 +394,7 @@ dinnerButton.addEventListener('click', () => {
     specialButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
-    connectCornerButton.classList.remove('activeGalleryBtn');
+    vijanaAjabuButton.classList.remove('activeGalleryBtn');
     testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
@@ -430,7 +440,7 @@ holidayButton.addEventListener('click', () => {
     dinnerButton.classList.remove('activeGalleryBtn');
     specialButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
-    connectCornerButton.classList.remove('activeGalleryBtn');
+    vijanaAjabuButton.classList.remove('activeGalleryBtn');
     testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
@@ -476,7 +486,7 @@ specialButton.addEventListener('click', () => {
     dinnerButton.classList.remove('activeGalleryBtn');
     holidayButton.classList.remove('activeGalleryBtn');
     allImagesButton.classList.remove('activeGalleryBtn');
-    connectCornerButton.classList.remove('activeGalleryBtn');
+    vijanaAjabuButton.classList.remove('activeGalleryBtn');
     testimonialsButton.classList.remove('activeGalleryBtn');
 
     allPicturesContainer.replaceChildren();
@@ -516,7 +526,7 @@ specialButton.addEventListener('click', () => {
 // displaying testimonials
 testimonialsButton.addEventListener('click', () => {
     testimonialsButton.classList.add('activeGalleryBtn');
-    connectCornerButton.classList.remove('activeGalleryBtn');
+    vijanaAjabuButton.classList.remove('activeGalleryBtn');
     specialButton.classList.remove('activeGalleryBtn');
     artAndCraftButton.classList.remove('activeGalleryBtn');
     danceButton.classList.remove('activeGalleryBtn');
@@ -547,9 +557,9 @@ testimonialsButton.addEventListener('click', () => {
     // <iframe width="560" height="315"  allowfullscreen></iframe>;
 });
 
-// displaying connect corner images / videos
-connectCornerButton.addEventListener('click', () => {
-    connectCornerButton.classList.add('activeGalleryBtn');
+// displaying vijana ajabu images
+vijanaAjabuButton.addEventListener('click', () => {
+    vijanaAjabuButton.classList.add('activeGalleryBtn');
     testimonialsButton.classList.remove('activeGalleryBtn');
     specialButton.classList.remove('activeGalleryBtn');
     artAndCraftButton.classList.remove('activeGalleryBtn');
@@ -561,36 +571,36 @@ connectCornerButton.addEventListener('click', () => {
 
     allPicturesContainer.replaceChildren();
 
-    // allSpecialProgramsImages.forEach(pictureSrc => {
-    //     const eachPictureDiv = document.createElement('div');
-    //     const eachImgTag = document.createElement('img');
+    allVijanaAjabuImages.forEach(pictureSrc => {
+        const eachPictureDiv = document.createElement('div');
+        const eachImgTag = document.createElement('img');
 
-    //     eachImgTag.src = pictureSrc;
-    //     eachImgTag.alt = 'Picture';
+        eachImgTag.src = pictureSrc;
+        eachImgTag.alt = 'Picture';
 
-    //     eachPictureDiv.classList.add('eachPictureDiv');
-    //     eachPictureDiv.appendChild(eachImgTag);
+        eachPictureDiv.classList.add('eachPictureDiv');
+        eachPictureDiv.appendChild(eachImgTag);
 
-    //     eachImgTag.addEventListener('click', () => {
-    //         fullScreenImage.src = pictureSrc;
-    //         popUpPage.style.display = 'flex';
-    //         document.body.classList.add('noScroll');
-    //     });
+        eachImgTag.addEventListener('click', () => {
+            fullScreenImage.src = pictureSrc;
+            popUpPage.style.display = 'flex';
+            document.body.classList.add('noScroll');
+        });
 
-    //     allPicturesContainer.appendChild(eachPictureDiv);
-    // });
+        allPicturesContainer.appendChild(eachPictureDiv);
+    });
 
-    // closeButton.addEventListener('click', () => {
-    //     popUpPage.style.display = 'none';
-    //     document.body.classList.remove('noScroll');
-    // });
+    closeButton.addEventListener('click', () => {
+        popUpPage.style.display = 'none';
+        document.body.classList.remove('noScroll');
+    });
 
-    // popUpPage.addEventListener('click', (event) => {
-    //     if (event.target === popUpPage) {
-    //         popUpPage.style.display = 'none';
-    //         document.body.classList.remove('noScroll');
-    //     }
-    // });
+    popUpPage.addEventListener('click', (event) => {
+        if (event.target === popUpPage) {
+            popUpPage.style.display = 'none';
+            document.body.classList.remove('noScroll');
+        }
+    });
 });
 
 
