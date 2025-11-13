@@ -237,8 +237,8 @@ nav {
 
 #centerOfChoice,
 #ccsClubs,
-#feedbackSection ,
-#testimonialsMainPage h2 {
+#feedbackSection,
+#testimonialsMainPage {
     text-align: center;
 }
 
@@ -365,16 +365,22 @@ nav {
 #testimonialsMainPage a {
     color: #0026ff;
     font-weight: 600;
+    text-decoration: none;
 }
+
 #testimonialsMainPage a:visited {
-    /* color: #0026ff; */
+    color: #0026ff;
     font-weight: 600;
+    text-decoration: none;
+}
+
+#testimonialsMainPage a:hover {
+    text-decoration: underline;
 }
 
 .testimonialsDiv {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 25px;
 }
 
@@ -554,6 +560,13 @@ nav {
         grid-row: 3;
     }
 
+    /* testimonial videos */
+    .testimonialsDiv {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
     /* contact */
     .akcNum {
         letter-spacing: 3px;
@@ -643,6 +656,11 @@ nav {
         margin: 0 auto;
     }
 
+    /* testimonial videos */
+    .testimonialsDiv {
+        gap: 20px;
+    }
+
     /* contact */
     #contactUs {
         border-top-left-radius: 60px;
@@ -719,6 +737,11 @@ nav {
     .ruthSheilaCard {
         grid-column: 3/4;
         grid-row: 1;
+    }
+
+    /* testimonial videos */
+    .testimonialsDiv {
+        gap: 30px;
     }
 
     /* contact */
