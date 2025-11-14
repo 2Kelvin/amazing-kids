@@ -118,6 +118,48 @@ nav {
     color: white;
 }
 
+.myButton {
+    background-image: linear-gradient(92.88deg, rgb(245, 245, 153) 9.16%, rgb(249, 249, 43) 43.89%, yellow 64.72%);
+    box-shadow: rgba(0, 0, 255, 0.5) 0 1px 5px;
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: fit-content;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    padding: 0.6rem 3rem;
+    color: #0026ff;
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: 300;
+}
+
+.myButton:hover {
+    background-color: white;
+    color: #0026ff;
+    background-image: none;
+    cursor: pointer;
+}
+
+.myButton a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.myButton a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.myButton a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 a.registerButton {
     background-image: linear-gradient(92.88deg, rgb(245, 245, 153) 9.16%, rgb(249, 249, 43) 43.89%, yellow 64.72%);
     box-shadow: rgba(0, 0, 255, 0.5) 0 1px 10px;
